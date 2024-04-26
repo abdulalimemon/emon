@@ -1,9 +1,11 @@
-import CommingSoon from "@/components/pages/commingSoon";
+import Footer from "@/components/shared/Footer/Footer";
+import Navbar from "@/components/shared/Navbar/Navbar";
 
 export default function Home() {
   return (
     <main>
-      <CommingSoon />
+      <Navbar />
+      <Footer />
     </main>
   );
 }
