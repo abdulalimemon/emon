@@ -5,6 +5,8 @@ export default function Home() {
   return (
     <main>
       <Navbar />
+      <div className="h-[70vh]"> 
+      </div>
       <Footer />
     </main>
   );

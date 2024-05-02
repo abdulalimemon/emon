@@ -7,10 +7,12 @@ import MobileNavbar from "./MobileNavbar";
 import { useTheme } from "next-themes";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { BsGithub } from "react-icons/bs";
+import { CgMenuGridO } from "react-icons/cg";
+import { usePathname } from 'next/navigation';
 
 const Navbar = () => {
   const { setTheme } = useTheme();
+  const currentPath = usePathname();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -18,11 +20,11 @@ const Navbar = () => {
   };
 
   return (
-    <header className="relative w-full border-b h-14 flex justify-center items-center">
+    <header className="relative w-full border-b border-[#1e242d] h-14 flex justify-center items-center nav-bg">
       <Container>
         <div className="flex items-center justify-between py-2">
           <div className="inline-flex items-center">
-            <Link href="/" className="font-bold text-lg">
+            <Link href={'/'} className="decoration-none font-semibold hover:text-color-yellow">
               Emon
             </Link>
           </div>
@@ -30,14 +32,14 @@ const Navbar = () => {
           <div className="hidden lg:flex items-center">
             <ul className="inline-flex justify-center items-center space-x-8">
               <li>
-                <Link href="/about" className="decoration-none font-semibold">
+                <Link href="/about" className={currentPath === "/about" ? "decoration-none font-semibold text-link" : "decoration-none font-semibold hover:text-color-yellow"}>
                   About
                 </Link>
               </li>
               <li>
                 <Link
                   href="/portfolio"
-                  className="decoration-none font-semibold"
+                  className={currentPath === "/portfolio" ? "decoration-none font-semibold text-link" : "decoration-none font-semibold hover:text-color-yellow"}
                 >
                   Portfolio
                 </Link>
@@ -45,13 +47,13 @@ const Navbar = () => {
               <li>
                 <Link
                   href="/services"
-                  className="decoration-none font-semibold"
+                  className={currentPath === "/services" ? "decoration-none font-semibold text-link" : "decoration-none font-semibold hover:text-color-yellow"}
                 >
                   Services
                 </Link>
               </li>
               <li>
-                <Link href="/pricing" className="decoration-none font-semibold">
+                <Link href="/pricing" className={currentPath === "/pricing" ? "decoration-none font-semibold text-link" : "decoration-none font-semibold hover:text-color-yellow"}>
                   Pricing
                 </Link>
               </li>
@@ -69,7 +71,7 @@ const Navbar = () => {
 
               <li>
                 <Link href="/contact" className="decoration-none font-semibold">
-                  <Button className="rounded-full">Get in touch</Button>
+                  <Button className="rounded-full bg-link hover:bg-link/90 font-semibold text-black">Get in touch</Button>
                 </Link>
               </li>
             </ul>
@@ -87,7 +89,7 @@ const Navbar = () => {
                 onClick={() => setTheme("light")}
               />
             </div>
-            <Menu onClick={toggleMenu} className="h-6 w-6 cursor-pointer" />
+            <CgMenuGridO  onClick={toggleMenu} className="h-6 w-6 cursor-pointer" />
           </div>
           {isMenuOpen && (
             <>
