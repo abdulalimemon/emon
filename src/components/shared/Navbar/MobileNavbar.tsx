@@ -97,7 +97,7 @@ const MobileNavbar = () => {
                       </span>
                     </Link>
                     <Link href="/contact" className="decoration-none font-semibold w-full">
-                  <Button className="rounded-full bg-link hover:bg-link/90 font-semibold my-4 text-black w-full">
+                  <Button className="rounded-full bg-link hover:bg-link/90 font-semibold my-4 text-black w-full py-5">
                   <MdContactPhone className="size-6" aria-hidden="true" />
                       <span className="mx-2 text-sm font-semibold">
                       Get in touch
