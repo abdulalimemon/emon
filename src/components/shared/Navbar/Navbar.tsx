@@ -1,23 +1,17 @@
-"use client";
+"use client"
 
 import Container from "@/components/layout/Container";
-import { useState } from "react";
-import { Menu, Moon, Sun } from "lucide-react";
+import {  Moon, Sun } from "lucide-react";
 import MobileNavbar from "./MobileNavbar";
 import { useTheme } from "next-themes";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { CgMenuGridO } from "react-icons/cg";
+
 import { usePathname } from 'next/navigation';
 
 const Navbar = () => {
   const { setTheme } = useTheme();
   const currentPath = usePathname();
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
 
   return (
     <header className="relative w-full border-b border-[#1e242d] h-14 flex justify-center items-center nav-bg">
@@ -89,13 +83,8 @@ const Navbar = () => {
                 onClick={() => setTheme("light")}
               />
             </div>
-            <CgMenuGridO  onClick={toggleMenu} className="h-6 w-6 cursor-pointer" />
-          </div>
-          {isMenuOpen && (
-            <>
-              <MobileNavbar />
-            </>
-          )}
+            <MobileNavbar />
+          </div>          
         </div>
       </Container>
     </header>

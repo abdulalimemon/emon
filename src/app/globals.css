@@ -91,4 +91,7 @@
   .button-bg {
     @apply bg-[#0DBDBE];
   }
+  .NavMobile {
+    @apply flex transform items-center justify-center rounded-lg px-3 py-2 text-gray-200 transition-colors duration-300;
+  }
 }
