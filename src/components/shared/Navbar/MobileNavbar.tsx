@@ -70,7 +70,7 @@ const MobileNavbar = () => {
                     </Link>
                     <Link
                       className={
-                        currentPath === "/about"
+                        currentPath === "/portfolio"
                           ? "NavMobile bg-color-yellow text-black"
                           : "NavMobile "
                       }
@@ -87,7 +87,7 @@ const MobileNavbar = () => {
                           ? "NavMobile bg-color-yellow text-black"
                           : "NavMobile "
                       }
-                      href="/about"
+                      href="/services"
                     >
                       <MdMiscellaneousServices
                         className="size-6"
@@ -97,7 +97,7 @@ const MobileNavbar = () => {
                     </Link>
                     <Link
                       className={
-                        currentPath === "/about"
+                        currentPath === "/pricing"
                           ? "NavMobile bg-color-yellow text-black"
                           : "NavMobile "
                       }
@@ -110,7 +110,7 @@ const MobileNavbar = () => {
                       href="/contact"
                       className="decoration-none font-semibold w-full"
                     >
-                      <Button className="rounded-full bg-link hover:bg-link/90 font-semibold my-4 text-black w-full py-5">
+                      <Button className="rounded-full bg-link hover:bg-link/90 font-semibold my-4 text-black w-full py-6">
                         <MdContactPhone className="size-6" aria-hidden="true" />
                         <span className="mx-2 text-sm font-semibold">
                           Get in touch
