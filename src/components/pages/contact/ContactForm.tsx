@@ -10,6 +10,7 @@ import "@/style/index.css";
 import { FaQuoteLeft } from "react-icons/fa6";
 import Image from "next/image";
 import emon from "@/assets/emon.png";
+import { MdEmail } from "react-icons/md";
 
 export type TVolunteerInputs = {
   name: string;
@@ -48,9 +49,9 @@ const ContactForm = () => {
     }
   };
   return (
-    <section className="py-20 bg-slate-50 dark:bg-black">
+    <section className="py-20 bg-gray-50 dark:bg-black">
       <Container className="py-5">
-        <div className="p-4 py-6 rounded-lg nav-bg md:p-8 flex gap-5 md:gap-14 lg:flex-row flex-col-reverse">
+        <div className="p-3 py-5 rounded-lg bg-slate-100 dark:bg-slate-900 md:p-8 flex gap-5 md:gap-14 lg:flex-row flex-col-reverse">
           <form onSubmit={handleSubmit(onSubmit)} className="lg:w-8/12">
             <h2 className="text-2xl lg:text-4xl py-5 font-semibold">
               Ready to discuss your software requirements?
@@ -166,18 +167,18 @@ const ContactForm = () => {
             <div>
               <div className="w-full my-4">
                 <label className="block mb-2 text-sm font-semibold">
-                  Comment
+                  Message
                 </label>
                 <Textarea
-                  placeholder="Comment"
+                  placeholder="Message"
                   {...register("message", {
                     required: {
                       value: true,
-                      message: "Comment is Required.",
+                      message: "Message is Required.",
                     },
                     minLength: {
                       value: 50,
-                      message: "Comment must be 50 characters or longer.",
+                      message: "Message must be 50 characters or longer.",
                     },
                   })}
                 />
@@ -207,7 +208,7 @@ const ContactForm = () => {
             </div>
           </form>
 
-          <div className="bg-color-yellow lg:w-4/12 rounded-md px-5 py-10">
+          <div className="bg-black lg:w-4/12 rounded-md px-5 py-10">
             <div className="flex flex-col justify-between h-full">
               <div>
                 <FaQuoteLeft className="size-5 lg:size-7 text-link" />
@@ -218,7 +219,10 @@ const ContactForm = () => {
                   email. I will do my best to respond to your inquiry as soon as
                   possible.
                 </h2>
-                <p className="text-text text-sm lg:text-base">Email: abdulalimemon02@gmail.com</p>
+                <p className="text-text text-sm lg:text-base flex items-center">
+                  <MdEmail className="size-5 text-color-yellow" />{" "}
+                  <span className="ml-3">abdulalimemon02@gmail.com</span>
+                </p>
               </div>
 
               <div>
@@ -229,8 +233,12 @@ const ContactForm = () => {
                   alt="Abdul Alim Emon"
                   className="mt-10 mb-5 rounded-full h-20 w-20"
                 />
-                <h3 className="text-xl lg:text-base font-semibold text-text">Abdul Alim Emon</h3>
-                <p className="text-text text-sm lg:text-base">Front End Web Developer</p>
+                <h3 className="text-xl lg:text-base font-semibold text-text">
+                  Abdul Alim Emon
+                </h3>
+                <p className="text-text text-sm lg:text-base">
+                  Front End Web Developer
+                </p>
               </div>
             </div>
           </div>
