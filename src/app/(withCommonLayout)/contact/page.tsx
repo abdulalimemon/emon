@@ -1,8 +1,10 @@
+import ContactForm from '@/components/pages/contact/ContactForm';
+
 const ContactPage = () => {
   return (
-    <div>
-      <h2>Welcome to the Page page</h2>
-    </div>
+    <>
+      <ContactForm />
+    </>
   );
 };
 

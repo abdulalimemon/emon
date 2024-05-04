@@ -15,7 +15,7 @@ const NotFound = () => {
           <div className="flex flex-col items-center justify-center mx-auto my-8">
             <div className="max-w-md text-center">
               <Image src={errorImage} width={100} height={100} alt="404 image" className="mx-auto w-36 h-36" />
-              <p className="text-2xl font-semibold md:text-4xl">
+              <p className="text-2xl font-semibold md:text-3xl">
               Apologies, it seems this page is missing or cannot be found.
               </p>
               <p className="mt-4 mb-8 text-sm md:text-base">
