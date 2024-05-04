@@ -48,9 +48,9 @@ const ContactForm = () => {
     }
   };
   return (
-    <section className="py-20 bg-color-contact">
+    <section className="py-20 bg-slate-50 dark:bg-black">
       <Container className="py-5">
-        <div className="p-4 py-6 rounded-lg bg-white dark:bg-black/90 md:p-8 flex gap-5 md:gap-14 lg:flex-row flex-col-reverse">
+        <div className="p-4 py-6 rounded-lg nav-bg md:p-8 flex gap-5 md:gap-14 lg:flex-row flex-col-reverse">
           <form onSubmit={handleSubmit(onSubmit)} className="lg:w-8/12">
             <h2 className="text-2xl lg:text-4xl py-5 font-semibold">
               Ready to discuss your software requirements?
@@ -207,17 +207,18 @@ const ContactForm = () => {
             </div>
           </form>
 
-          <div className="bg-slate-900 lg:w-4/12 rounded-md px-5 py-10">
+          <div className="bg-color-yellow lg:w-4/12 rounded-md px-5 py-10">
             <div className="flex flex-col justify-between h-full">
               <div>
                 <FaQuoteLeft className="size-5 lg:size-7 text-link" />
-                <h2 className="my-5 text-text">
+                <h2 className="my-5 text-text text-sm lg:text-base">
                   If you have any questions or suggestions regarding any
                   projects, please don&apos;t hesitate to contact me. To contact
                   me, fill out the contact form or you can reach out to me via
                   email. I will do my best to respond to your inquiry as soon as
                   possible.
                 </h2>
+                <p className="text-text text-sm lg:text-base">Email: abdulalimemon02@gmail.com</p>
               </div>
 
               <div>
@@ -228,8 +229,8 @@ const ContactForm = () => {
                   alt="Abdul Alim Emon"
                   className="mt-10 mb-5 rounded-full h-20 w-20"
                 />
-                <h3 className="text-xl font-semibold text-text">Abdul Alim Emon</h3>
-                <p className="font-medium text-text">Front End Web Developer</p>
+                <h3 className="text-xl lg:text-base font-semibold text-text">Abdul Alim Emon</h3>
+                <p className="text-text text-sm lg:text-base">Front End Web Developer</p>
               </div>
             </div>
           </div>

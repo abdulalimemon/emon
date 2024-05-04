@@ -47,7 +47,7 @@ const Footer = () => {
               <a
                 className="p-2 rounded-full bg-[#112240] mr-2 hover:bg-[#1A3B69]"
                 title="Send Email"
-                href="mailto:abdulalimemon11@gmail.com"
+                href="mailto:abdulalimemon02@gmail.com"
               >
                 <MdMarkEmailUnread className="size-6 text-color-yellow" />
               </a>
