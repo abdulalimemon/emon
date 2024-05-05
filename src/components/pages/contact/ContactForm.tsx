@@ -198,12 +198,15 @@ const ContactForm = () => {
             </div>
 
             <div className="mt-5">
-              <Button
+              <button
                 type="submit"
-                className="w-full rounded-full bg-link hover:bg-link/90 font-semibold text-black py-6"
+                className="relative inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 w-full mt-4"
               >
-                Send message
-              </Button>
+                <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
+                <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-900 px-5 text-sm font-medium hover:bg-black text-white backdrop-blur-3xl transition duration-500">
+                  Send message
+                </span>
+              </button>
             </div>
           </form>
 
@@ -230,7 +233,7 @@ const ContactForm = () => {
                   width={100}
                   height={100}
                   alt="Abdul Alim Emon"
-                  className="mt-10 mb-5 rounded-full md:h-20 mdw-20"
+                  className="mt-10 mb-5 rounded-full h-16 w-16"
                 />
                 <h3 className="text-xl lg:text-base font-semibold text-text">
                   Abdul Alim Emon

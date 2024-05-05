@@ -55,7 +55,7 @@ const Footer = () => {
           </div>
           <div>
             <p className="text-sm lg:text-base text-center">
-              Copyright © {year} - All right reserved by Abdul Alim Emon.
+              Copyright © {year} - All right reserved <br className="lg:hidden" /> by Abdul Alim Emon.
             </p>
           </div>
         </div>

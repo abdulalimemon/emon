@@ -25,7 +25,7 @@ const HeroSection = () => {
                 Abdul Alim Emon
               </h2>
               <h3 className="text-3xl md:text-6xl pb-5 font-semibold">
-                Passionate MERN Stack Developer
+                Passionate Front End Web Developer
               </h3>
               <div className="w-11/12 md:w-8/12 mx-auto pb-10">
                 <TextGenerateEffect words={words} className="font-medium" />

@@ -35,7 +35,7 @@ const MobileNavbar = () => {
           <div className="flex justify-between items-center py-5">
             <h2 className="font-bold text-lg">Emon</h2>
             <button
-              className="rounded-full p-2 cursor-pointer fixed right-7 z-50 bg-color-yellow text-black"
+              className="rounded-full p-2 cursor-pointer fixed right-7 z-50 bg-text text-black"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
               <X className="size-5" />
@@ -109,16 +109,19 @@ const MobileNavbar = () => {
                     <Link
                       href="/contact"
                       className="decoration-none font-semibold w-full"
-                    >              
+                    >
                       <button className="relative inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 w-full mt-4">
-                    <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
-                    <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-900 px-5 text-sm font-medium hover:bg-black text-white backdrop-blur-3xl transition duration-500">
-                    <MdContactPhone className="size-6" aria-hidden="true" />
-                        <span className="mx-2 text-sm font-semibold">
-                          Get in touch
+                        <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
+                        <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-900 px-5 text-sm font-medium hover:bg-black text-white backdrop-blur-3xl transition duration-500">
+                          <MdContactPhone
+                            className="size-6"
+                            aria-hidden="true"
+                          />
+                          <span className="mx-2 text-sm font-semibold">
+                            Get in touch
+                          </span>
                         </span>
-                    </span>
-                  </button>
+                      </button>
                     </Link>
                   </div>
                 </nav>
