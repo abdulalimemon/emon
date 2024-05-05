@@ -1,10 +1,10 @@
 import Container from "@/components/layout/Container";
-import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import "@/style/index.css";
 import { IoMdCloudDownload } from "react-icons/io";
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 import { HeroHighlight } from "@/components/ui/hero-highlight";
+import { Button } from "@/components/ui/moving-border";
 
 const words = `I'm on a mission to create seamless and remarkable web
 experiences. With a strong foundation in MERN (MongoDB, Express,
@@ -18,7 +18,9 @@ const HeroSection = () => {
         <Container className="h-full">
           <div className="flex items-center justify-center h-full">
             <div className="text-center">
-              <p className="text-sm md:text-base font-medium">Hi there, I&apos;m </p>
+              <p className="text-sm md:text-base font-medium">
+                Hi there, I&apos;m{" "}
+              </p>
               <h2 className="text-4xl md:text-8xl font-bold pb-5 pt-5 text-transparent bg-clip-text bg-gradient-to-r from-[#FFCD38] to-[#F7CE68]">
                 Abdul Alim Emon
               </h2>
@@ -30,15 +32,21 @@ const HeroSection = () => {
               </div>
               <div className="flex flex-col lg:flex-row gap-5 items-center justify-center">
                 <Link href="/contact">
-                  <Button className="text-sm px-20 rounded-full bg-link hover:bg-link/90 font-semibold text-black py-7">
+                  <button className="relative inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
+                    <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
+                    <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-100 dark:bg-slate-900 px-20 py-5 text-sm font-medium text-black hover:bg-slate-200 hover:dark:bg-black dark:text-white backdrop-blur-3xl transition duration-500">
                     Get In Touch
-                  </Button>
+                    </span>
+                  </button>
                 </Link>
                 <Link href="/contact">
-                  <Button className="text-sm px-20 rounded-full border-link hover:bg-link/90 font-semibold text-black py-7 flex items-center">
+                  <button className="relative inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
+                    <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
+                    <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-100 dark:bg-slate-900 px-20 py-5 text-sm font-medium text-black hover:bg-slate-200 hover:dark:bg-black dark:text-white backdrop-blur-3xl transition duration-500">
                     <IoMdCloudDownload className="size-5 mr-3" />
-                    <span>Resume</span>
-                  </Button>
+                      <span>Resume</span>
+                    </span>
+                  </button>
                 </Link>
               </div>
             </div>

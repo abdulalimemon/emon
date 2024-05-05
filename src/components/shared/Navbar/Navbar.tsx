@@ -6,7 +6,6 @@ import MobileNavbar from "./MobileNavbar";
 import { useTheme } from "next-themes";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-
 import { usePathname } from "next/navigation";
 
 const Navbar = () => {
@@ -90,9 +89,12 @@ const Navbar = () => {
 
               <li>
                 <Link href="/contact" className="decoration-none font-semibold">
-                  <Button className="rounded-full bg-link hover:bg-link/90 font-semibold text-black">
+                  <button className="relative inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
+                    <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
+                    <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-900 px-5 text-sm font-medium hover:bg-black text-white backdrop-blur-3xl transition duration-500">
                     Get in touch
-                  </Button>
+                    </span>
+                  </button>
                 </Link>
               </li>
             </ul>
