@@ -11,8 +11,7 @@
     difference, color-dodge, normal;
 }
 
-.bg-color-contact {
-  position: relative;
+.bg-color-home {
   background: linear-gradient(129.96deg, #ff2f2f 10.43%, #000460 92.78%),
     radial-gradient(100% 246.94% at 100% 0%, #ffffff 0%, #020063 100%),
     linear-gradient(58.72deg, #2200f2 0%, #530000 100%),

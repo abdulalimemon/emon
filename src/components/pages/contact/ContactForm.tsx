@@ -6,7 +6,6 @@ import { Input } from "@/components/ui/input";
 import { FieldValues, SubmitHandler, useForm } from "react-hook-form";
 import { toast } from "sonner";
 import { Textarea } from "@/components/ui/textarea";
-import "@/style/index.css";
 import { FaQuoteLeft } from "react-icons/fa6";
 import Image from "next/image";
 import emon from "@/assets/emon.png";
@@ -54,7 +53,7 @@ const ContactForm = () => {
         <div className="p-3 py-5 rounded-lg bg-gray-50 dark:bg-slate-900 md:p-8 flex gap-5 md:gap-14 lg:flex-row flex-col-reverse">
           <form onSubmit={handleSubmit(onSubmit)} className="lg:w-8/12">
             <h2 className="text-2xl lg:text-4xl py-5 font-semibold">
-              Ready to discuss your software requirements?
+              Ready to discuss your website requirements?
             </h2>
             <div className="-mx-2 md:items-center md:flex">
               <div className="flex-1 px-2">
