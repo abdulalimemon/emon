@@ -5,7 +5,7 @@ const PortfolioSection = () => {
     <section>
       <Container>
         <div>
-            <h2 className="">Portfolio</h2>
+          <h2 className="">Portfolio</h2>
         </div>
       </Container>
     </section>

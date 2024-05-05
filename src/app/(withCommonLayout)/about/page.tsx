@@ -1,8 +1,10 @@
+import CommingSoon from "@/components/pages/commingSoon";
+
 const AboutPage = () => {
   return (
-    <div>
-      <h2>Welcome to the Page page</h2>
-    </div>
+    <>
+      <CommingSoon />
+    </>
   );
 };
 
