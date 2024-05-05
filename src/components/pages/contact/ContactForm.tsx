@@ -49,9 +49,9 @@ const ContactForm = () => {
     }
   };
   return (
-    <section className="py-20 bg-gray-50 dark:bg-black">
+    <section className="py-10 md:py-20 bg-slate-100 dark:bg-black">
       <Container className="py-5">
-        <div className="p-3 py-5 rounded-lg bg-slate-100 dark:bg-slate-900 md:p-8 flex gap-5 md:gap-14 lg:flex-row flex-col-reverse">
+        <div className="p-3 py-5 rounded-lg bg-gray-50 dark:bg-slate-900 md:p-8 flex gap-5 md:gap-14 lg:flex-row flex-col-reverse">
           <form onSubmit={handleSubmit(onSubmit)} className="lg:w-8/12">
             <h2 className="text-2xl lg:text-4xl py-5 font-semibold">
               Ready to discuss your software requirements?
@@ -231,7 +231,7 @@ const ContactForm = () => {
                   width={100}
                   height={100}
                   alt="Abdul Alim Emon"
-                  className="mt-10 mb-5 rounded-full h-20 w-20"
+                  className="mt-10 mb-5 rounded-full md:h-20 mdw-20"
                 />
                 <h3 className="text-xl lg:text-base font-semibold text-text">
                   Abdul Alim Emon
