@@ -24,7 +24,7 @@ const data = [
     id: "3",
     title: "SpacesWare",
     detail:
-      "SpacesWare is a variety of high quality products",
+    "SpacesWare is a e-commerce platform allowing users to create accounts, log in, update profiles, and leave product reviews with Admin functionalities.",
     image: "/spacesware.png",
     link: "/portfolio/spacesware",
   },
@@ -54,7 +54,7 @@ const PortfolioSection = () => {
                 <div className="inline-block">
                   <span className="inline-block"><Link
                     href={item.link}
-                    className="py-3 flex items-center justify-start hover:text-color-yellow dark:hover:text-link inline-block"
+                    className="py-3 flex items-center justify-start hover:text-color-yellow dark:hover:text-link"
                   >
                     <span>View details </span>{" "}
                     <FaAngleRight className="size-5 ml-2" />

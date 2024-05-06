@@ -39,8 +39,7 @@ const data = [
   {
     id: "5",
     title: "React Shop",
-    detail:
-      "React Shop is an online shop offering a wide range of products!",
+    detail: "React Shop is an online shop offering a wide range of products!",
     image: "/reactshop.png",
     link: "/portfolio/react-shop",
   },
@@ -68,13 +67,15 @@ const PortfolioPage = () => {
                 </h2>
                 <p className="text-base lg:text-2xl pb-3">{item.detail}</p>
                 <div className="inline-block">
-                  <span className="inline-block"><Link
-                    href={item.link}
-                    className="py-3 flex items-center justify-start hover:text-color-yellow dark:hover:text-link inline-block"
-                  >
-                    <span>View details </span>{" "}
-                    <FaAngleRight className="size-5 ml-2" />
-                  </Link></span>
+                  <span className="inline-block">
+                    <Link
+                      href={item.link}
+                      className="py-3 flex items-center justify-start hover:text-color-yellow dark:hover:text-link"
+                    >
+                      <span>View details </span>{" "}
+                      <FaAngleRight className="size-5 ml-2" />
+                    </Link>
+                  </span>
                 </div>
               </div>
               <div className="w-full lg:w-6/12">
