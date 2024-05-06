@@ -40,7 +40,7 @@ const HeroSection = () => {
                   </button>
                 </Link>
                 <Link
-                  href="/public/Abdul Alim Emon Resume.pdf"
+                  href="/Abdul Alim Emon Resume.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
