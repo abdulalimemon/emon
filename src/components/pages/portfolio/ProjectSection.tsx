@@ -4,7 +4,7 @@ import Container from "@/components/layout/Container";
 import { BackgroundGradient } from "@/components/ui/background-gradient";
 import Image from "next/image";
 import Link from "next/link";
-import { FaCaretRight, FaAngleRight } from "react-icons/fa";
+import { FaAngleRight } from "react-icons/fa";
 
 const data = [
   {
@@ -31,9 +31,24 @@ const data = [
     image: "/spacesware.png",
     link: "/portfolio/spacesware",
   },
+  {
+    id: "4",
+    title: "Warehouse",
+    detail:
+      "Warehouse is a React app that enables users to create accounts, log in, update profiles, and track inventory changes.",
+    image: "/warehouse.png",
+    link: "/portfolio/warehouse",
+  },
+  {
+    id: "5",
+    title: "React Shop",
+    detail: "React Shop is an online shop offering a wide range of products!",
+    image: "/reactshop.png",
+    link: "/portfolio/react-shop",
+  },
 ];
 
-const PortfolioSection = () => {
+const ProjectSection = () => {
   return (
     <section className="py-20 bg-slate-100 dark:bg-black">
       <Container>
@@ -76,18 +91,10 @@ const PortfolioSection = () => {
               </div>
             </BackgroundGradient>
           ))}
-          <p className="flex items-center justify-end">
-            <Link
-              href="/portfolio"
-              className="flex items-center justify-center hover:text-color-yellow dark:hover:text-link"
-            >
-              <span>Browse more</span> <FaCaretRight className="size-5 ml-2" />
-            </Link>
-          </p>
         </div>
       </Container>
     </section>
   );
 };
 
-export default PortfolioSection;
+export default ProjectSection;
