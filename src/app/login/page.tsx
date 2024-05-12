@@ -13,9 +13,9 @@ import { Label } from "@/components/ui/label";
 
 const LoginPage = () => {
   return (
-    <section className="py-20">
-      <Container>
-        <form className="flex items-center justify-center">
+    <section className="py-28 lg:h-[90vh]">
+      <Container className="h-full">
+        <form className="flex items-center justify-center h-full">
           <Card className="w-full max-w-sm mx-auto">
             <CardHeader>
               <CardTitle className="text-2xl">Login</CardTitle>
@@ -39,7 +39,7 @@ const LoginPage = () => {
               </div>
             </CardContent>
             <CardFooter>
-              <Button type="submit" className="w-full">Log in</Button>
+              <Button type="submit" className="w-full dark:text-black">Log in</Button>
             </CardFooter>
           </Card>
         </form>
