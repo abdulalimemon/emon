@@ -29,13 +29,13 @@ const LoginPage = () => {
                 <Input
                   id="email"
                   type="email"
-                  placeholder="m@example.com"
+                  placeholder="Email address"
                   required
                 />
               </div>
               <div className="grid gap-2">
                 <Label htmlFor="password">Password</Label>
-                <Input id="password" type="password" required />
+                <Input id="password" type="password" placeholder="Password" required />
               </div>
             </CardContent>
             <CardFooter>

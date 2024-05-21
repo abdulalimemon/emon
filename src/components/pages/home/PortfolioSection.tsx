@@ -70,6 +70,7 @@ const PortfolioSection = () => {
                     alt={item.title}
                     width={600}
                     height={150}
+                    placeholder="blur"
                     className="w-full"
                   />
                 </div>

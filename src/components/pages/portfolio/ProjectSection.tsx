@@ -86,6 +86,7 @@ const ProjectSection = () => {
                     width={600}
                     height={150}
                     className="w-full"
+                    placeholder="blur"
                   />
                 </div>
               </div>
