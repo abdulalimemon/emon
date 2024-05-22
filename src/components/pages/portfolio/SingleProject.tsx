@@ -4,14 +4,18 @@ import Image from "next/image";
 
 const SingleProject = ({ project }: { project: Project }) => {
   const { name, link, image } = project;
+  console.log(project);
+  console.log("hello");
   return (
-    <section>
+    <section className="py-10">
       <Container>
         <div className="flex flex-row-reverse lg:flex-col">
           <div>
             <div>
-              <h2>Name :{name}</h2>
-              <a href={link} className="text-base">
+              <h2 className="text-base lg:text-xl">
+                Name : <span className="font-semibold">{name}</span>
+              </h2>
+              <a href={link} className="text-base text-link lg:text-xl">
                 https://recover-ease.netlify.app/
               </a>
             </div>
