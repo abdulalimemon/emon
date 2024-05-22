@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { X } from "lucide-react";
+import {  X } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { CgMenuGridO } from "react-icons/cg";
@@ -11,7 +11,7 @@ import { FaDev } from "react-icons/fa";
 import { AiOutlineProject } from "react-icons/ai";
 import { ImPriceTags } from "react-icons/im";
 
-const MobileNavbar = () => {
+const DashboardMobileNav = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const currentPath = usePathname();
 
@@ -133,4 +133,4 @@ const MobileNavbar = () => {
   );
 };
 
-export default MobileNavbar;
+export default DashboardMobileNav;

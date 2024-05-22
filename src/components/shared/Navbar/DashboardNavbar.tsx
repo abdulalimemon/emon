@@ -7,7 +7,7 @@ import { useTheme } from "next-themes";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-const Navbar = () => {
+const DashboardNavbar = () => {
   const { setTheme } = useTheme();
   const currentPath = usePathname();
 
@@ -118,4 +118,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default DashboardNavbar;
