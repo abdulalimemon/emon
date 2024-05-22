@@ -1,6 +1,4 @@
-import Container from "@/components/layout/Container";
-import { Project } from "@/type";
-import Image from "next/image";
+import SingleProject from "@/components/pages/portfolio/SingleProject";
 
 interface ProjectName {
   params: {
@@ -9,46 +7,12 @@ interface ProjectName {
 }
 
 const ProjectPage = async ({ params }: ProjectName) => {
-  const res = await fetch(`${process.env.BACKEND_URL}/product/${params.title}`);
-  const data = await res.json();
+  const res = await fetch(`${process.env.BACKEND_URL}/project/${params.title}`);
+  const project = await res.json();
+
   return (
     <>
-      <section>
-        <Container>
-          <div className="flex flex-row-reverse lg:flex-col">
-            <div>
-              <div>
-                <h2>Name :{data.name}</h2>
-                <a
-                  href={data.link}
-                  className="text-base"
-                >
-                  https://recover-ease.netlify.app/
-                </a>
-              </div>
-              <div>
-                <div>
-                  <Image
-                    src={data.image}
-                    alt="Technology logo"
-                    width={40}
-                    height={40}
-                  />
-                </div>
-                <h2>Name</h2>
-              </div>
-            </div>
-            <div>
-              <Image
-                src={data.image}
-                alt="Technology logo"
-                width={240}
-                height={240}
-              />
-            </div>
-          </div>
-        </Container>
-      </section>
+      <SingleProject project={project} />
     </>
   );
 };
