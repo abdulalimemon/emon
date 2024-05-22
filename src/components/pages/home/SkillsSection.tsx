@@ -7,24 +7,49 @@ import { useState } from "react";
 
 const projects = [
   {
-    title: "Google",
+    title: "JavaScript",
     image:
-      "https://plus.unsplash.com/premium_photo-1676637000058-96549206fe71?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://e7.pngegg.com/pngimages/87/538/png-clipart-javascript-scalable-graphics-logo-encapsulated-postscript-javascript-icon-text-logo-thumbnail.png",
   },
   {
-    title: "Meta",
+    title: "TypeScript",
     image:
-      "https://plus.unsplash.com/premium_photo-1676637000058-96549206fe71?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/2048px-Typescript_logo_2020.svg.png",
   },
   {
-    title: "Amazon",
+    title: "Tailwind CSS",
     image:
-      "https://plus.unsplash.com/premium_photo-1676637000058-96549206fe71?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://w7.pngwing.com/pngs/293/485/png-transparent-tailwind-css-hd-logo.png",
   },
   {
-    title: "Microsoft",
+    title: "React",
     image:
-      "https://plus.unsplash.com/premium_photo-1676637000058-96549206fe71?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png",
+  },
+  {
+    title: "Redux",
+    image:
+      "https://static-00.iconduck.com/assets.00/redux-icon-2048x1945-ahvhunxp.png",
+  },
+  {
+    title: "Node JS",
+    image:
+      "https://static-00.iconduck.com/assets.00/node-js-icon-454x512-nztofx17.png",
+  },
+  {
+    title: "Express JS",
+    image:
+      "https://cdn.icon-icons.com/icons2/2699/PNG/512/expressjs_logo_icon_169185.png",
+  },
+  {
+    title: "Next JS",
+    image:
+      "https://static-00.iconduck.com/assets.00/next-js-icon-512x512-zuauazrk.png",
+  },
+  {
+    title: "MongoDB",
+    image:
+      "https://cdn.icon-icons.com/icons2/2415/PNG/512/mongodb_original_logo_icon_146424.png",
   },
 ];
 
@@ -35,12 +60,12 @@ const SkillsSection = () => {
       <Container>
         <div>
           <h2 className="text-center text-2xl lg:text-4xl font-semibold py-5 lg:py-10">
-            Skills.
+            My Tech Stack.
           </h2>
         </div>
 
         <div className="grid grid-cols-1 gap-10">
-          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 py-10">
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 py-10">
             {projects.map((item, idx) => (
               <div
                 key={item.title}
@@ -65,8 +90,8 @@ const SkillsSection = () => {
                     />
                   )}
                 </AnimatePresence>
-                <div className="rounded-2xl h-full w-full p-4 overflow-hidden bg-black border border-transparent dark:border-white/[0.2] group-hover:border-slate-700 relative z-20">
-                  <div className="relative z-50">
+                <div className="rounded-2xl h-full w-full p-4 overflow-hidden bg-slate-100 border-slate-100 dark:bg-black border border-transparent dark:border-white/[0.2] group-hover:border-slate-700 relative z-20">
+                  <div className="relative z-50 flex justify-center items-center">
                     <h2>{item.title}</h2>
                     <Image
                       src={item.image}
