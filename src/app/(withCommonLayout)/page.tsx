@@ -3,13 +3,20 @@ import HeroSection from "@/components/pages/home/HeroSection";
 import PortfolioSection from "@/components/pages/home/PortfolioSection";
 import SkillsSection from "@/components/pages/home/SkillsSection";
 
-export default function Home() {
+const HomePage = async() => {
+  const res = await fetch(`${process.env.BACKEND_URL}/project`, {
+    cache: "no-store",
+  });
+  const data = await res.json();
+  
   return (
     <main>
       <HeroSection />
       <SkillsSection />
-      <PortfolioSection />
+      <PortfolioSection data={data} />
       <ContactSection />
     </main>
   );
 }
+
+export default HomePage;

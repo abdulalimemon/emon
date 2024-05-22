@@ -6,10 +6,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { CgMenuGridO } from "react-icons/cg";
 import { IoHome } from "react-icons/io5";
-import { MdContactPhone, MdMiscellaneousServices } from "react-icons/md";
-import { FaDev } from "react-icons/fa";
-import { AiOutlineProject } from "react-icons/ai";
-import { ImPriceTags } from "react-icons/im";
+import { MdContactPhone } from "react-icons/md";
 
 const DashboardMobileNav = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
