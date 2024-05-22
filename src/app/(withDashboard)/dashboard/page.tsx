@@ -1,5 +1,3 @@
-import DashboardSidebar from "@/components/component/dashboard/DashboardSidebar";
-
 const DashboardPage = () => {
   
   return (
