@@ -28,50 +28,14 @@ const DashboardNavbar = () => {
             <ul className="inline-flex justify-center items-center space-x-8">
               <li>
                 <Link
-                  href="/about"
+                  href="/dashboard"
                   className={
-                    currentPath === "/about"
+                    currentPath === "/dashboard"
                       ? "decoration-none font-semibold text-link"
                       : "decoration-none font-semibold hover:text-color-yellow"
                   }
                 >
-                  About
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/portfolio"
-                  className={
-                    currentPath === "/portfolio"
-                      ? "decoration-none font-semibold text-link"
-                      : "decoration-none font-semibold hover:text-color-yellow"
-                  }
-                >
-                  Portfolio
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/services"
-                  className={
-                    currentPath === "/services"
-                      ? "decoration-none font-semibold text-link"
-                      : "decoration-none font-semibold hover:text-color-yellow"
-                  }
-                >
-                  Services
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/pricing"
-                  className={
-                    currentPath === "/pricing"
-                      ? "decoration-none font-semibold text-link"
-                      : "decoration-none font-semibold hover:text-color-yellow"
-                  }
-                >
-                  Pricing
+                  Dashboard
                 </Link>
               </li>
 
@@ -87,14 +51,14 @@ const DashboardNavbar = () => {
               </li>
 
               <li>
-                <Link href="/contact" className="decoration-none font-semibold">
+                <div className="decoration-none font-semibold">
                   <button className="relative inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-1 focus:ring-slate-400 focus:ring-offset-1 focus:ring-offset-slate-50">
                     <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
                     <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-900 px-5 text-sm font-medium hover:bg-black text-white backdrop-blur-3xl transition duration-500">
-                      Get in touch
+                      Log Out
                     </span>
                   </button>
-                </Link>
+                </div>
               </li>
             </ul>
           </div>
