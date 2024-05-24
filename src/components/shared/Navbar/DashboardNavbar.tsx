@@ -2,10 +2,10 @@
 
 import Container from "@/components/layout/Container";
 import { Moon, Sun } from "lucide-react";
-import MobileNavbar from "./MobileNavbar";
 import { useTheme } from "next-themes";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import DashboardMobileNav from "./DashboardMobileNav";
 
 const DashboardNavbar = () => {
   const { setTheme } = useTheme();
@@ -74,7 +74,7 @@ const DashboardNavbar = () => {
                 onClick={() => setTheme("light")}
               />
             </div>
-            <MobileNavbar />
+            <DashboardMobileNav />
           </div>
         </div>
       </Container>
