@@ -23,7 +23,7 @@ const data = [
   },
   {
     name: "SpacesWare",
-    title:"spacesWare",
+    title:"spacesware",
     shortdetail:
       "SpacesWare is a e-commerce platform allowing users to create accounts, log in, update profiles, and leave product reviews with Admin functionalities.",
     image: "https://abdulalimemon.vercel.app/spacesware.png",

@@ -4,12 +4,11 @@ import Image from "next/image";
 
 const SingleProject = ({ project }: { project: Project }) => {
   const { name, link, image } = project;
-  console.log(project);
-  console.log("hello");
+  
   return (
-    <section className="py-20 bg-slate-50">
+    <section className="py-14 lg:py-20 bg-slate-50 dark:bg-slate-950">
       <Container>
-        <div className="flex flex-row-reverse lg:flex-col">
+        <div className="flex flex-col-reverse lg:flex-col">
           <div className="flex items-center justify-between">
             <div>
               <h2 className="text-base lg:text-xl">
@@ -19,7 +18,7 @@ const SingleProject = ({ project }: { project: Project }) => {
                 https://recover-ease.netlify.app/
               </a>
             </div>
-            <div>
+            <div className="flex items-center gap-4">
               <div>
                 <Image
                   src={image}
@@ -27,19 +26,40 @@ const SingleProject = ({ project }: { project: Project }) => {
                   width={40}
                   height={40}
                 />
+              <h2 className="mt-1">Name</h2>
               </div>
-              <h2>Name</h2>
+              <div>
+                <Image
+                  src={image}
+                  alt="Technology logo"
+                  width={40}
+                  height={40}
+                />
+              <h2 className="mt-1">Name</h2>
+              </div>
+              <div>
+                <Image
+                  src={image}
+                  alt="Technology logo"
+                  width={40}
+                  height={40}
+                />
+              <h2 className="mt-1">Name</h2>
+              </div>
             </div>
           </div>
-          <div className="w-full my-8">
+          <div className="w-full my-8 mx-auto">
             <Image
               src={project.image}
               alt="Technology logo"
-              width={800}
+              width={1000}
               height={500}
+              className="w-full mx-auto"
             />
           </div>
         </div>
+
+        
       </Container>
     </section>
   );
