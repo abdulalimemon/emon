@@ -7,10 +7,10 @@ const SingleProject = ({ project }: { project: Project }) => {
   console.log(project);
   console.log("hello");
   return (
-    <section className="py-10">
+    <section className="py-20 bg-slate-50">
       <Container>
         <div className="flex flex-row-reverse lg:flex-col">
-          <div>
+          <div className="flex items-center justify-between">
             <div>
               <h2 className="text-base lg:text-xl">
                 Name : <span className="font-semibold">{name}</span>
@@ -31,12 +31,12 @@ const SingleProject = ({ project }: { project: Project }) => {
               <h2>Name</h2>
             </div>
           </div>
-          <div>
+          <div className="w-full my-8">
             <Image
               src={project.image}
               alt="Technology logo"
-              width={240}
-              height={240}
+              width={800}
+              height={500}
             />
           </div>
         </div>
