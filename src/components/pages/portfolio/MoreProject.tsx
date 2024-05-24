@@ -8,15 +8,15 @@ import { FaAngleRight } from "react-icons/fa";
 
 const MoreProject = ({ data }: { data: Project[] }) => {
   return (
-    <section className="py-5 bg-slate-100 dark:bg-black">
+    <section className="pt-5 pb-14 lg:pb-20 bg-slate-100 dark:bg-black">
       <Container>
         <div>
-          <h2 className="text-center text-2xl lg:text-4xl font-semibold py-5 lg:py-10">
+          <h2 className="text-center text-xl lg:text-2xl font-semibold py-5 lg:py-10">
             More Projects.
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           {data.map((item) => (
             <div key={item._id} className="p-[1px]">
               <div className="flex flex-col p-5 lg:py-10 lg:px-12 shadow-lg w-full gap-5 rounded-[22px] bg-gray-50 dark:bg-slate-900">
@@ -28,7 +28,7 @@ const MoreProject = ({ data }: { data: Project[] }) => {
                     <span className="inline-block">
                       <Link
                         href={item.link}
-                        className="py-3 flex items-center justify-start hover:text-color-yellow dark:hover:text-link"
+                        className="pb-3 flex items-center justify-start hover:text-color-yellow dark:hover:text-link"
                       >
                         <span>View details </span>{" "}
                         <FaAngleRight className="size-5 ml-2" />
@@ -36,7 +36,7 @@ const MoreProject = ({ data }: { data: Project[] }) => {
                     </span>
                   </div>
                 </div>
-                <div className="w-full lg:w-6/12">
+                <div className="w-full">
                   <Image
                     src={item.image}
                     alt={item.name}

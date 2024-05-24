@@ -40,7 +40,7 @@ const SingleProject = ({ project }: { project: Project }) => {
               <div>
                 <Image
                   src={image}
-                  alt="Technology logo"
+                  alt={name}
                   width={40}
                   height={40}
                 />
@@ -52,8 +52,8 @@ const SingleProject = ({ project }: { project: Project }) => {
             <Image
               src={project.image}
               alt="Technology logo"
-              width={1000}
-              height={500}
+              width={900}
+              height={460}
               className="w-full mx-auto"
             />
           </div>
