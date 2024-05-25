@@ -1,4 +1,5 @@
 import Container from "@/components/layout/Container";
+import { Button } from "@/components/ui/button";
 import { Project } from "@/type";
 import Image from "next/image";
 
@@ -18,7 +19,7 @@ const SingleProject = ({ project }: { project: Project }) => {
                 https://recover-ease.netlify.app/
               </a>
             </div>
-            <div className="flex items-center gap-4">
+            <div className="flex items-start lg:items-center gap-4 mt-5 lg:mt-0">
               <div>
                 <Image
                   src={image}
@@ -49,40 +50,51 @@ const SingleProject = ({ project }: { project: Project }) => {
               alt="Technology logo"
               width={800}
               height={400}
-              className="w-full mx-auto"
+              className="w-[800px] h-[400px] mx-auto"
             />
           </div>
-          <div className="py-5">
-            <div className="flex flex-col lg:flex-row border-b py-5">
-              <h2 className="text-xl lg:text-2xl font-semibold">
-                Project Overview
-              </h2>
-              <p className="text-base lg:text-xl">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ut
-                a ipsam corporis voluptate veritatis doloribus beatae, quae
-                incidunt quis unde asperiores dolores consectetur. Molestias aut
-                minus quod rem consequatur.
-              </p>
+        </div>
+        <div className="py-5">
+          <div className="flex flex-col lg:flex-row border-b py-10 lg:py-14">
+            <h2 className="text-xl lg:text-2xl font-semibold w-full lg:w-1/3 mb-3">
+              Project Overview
+            </h2>
+            <p className="text-base lg:text-xl w-full lg:w-2/3">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ut a
+              ipsam corporis voluptate veritatis doloribus beatae, quae incidunt
+              quis unde asperiores dolores consectetur. Molestias aut minus quod
+              rem consequatur.
+            </p>
+          </div>
+          <div className="flex flex-col lg:flex-row border-b py-10 lg:py-14">
+            <h2 className="text-xl lg:text-2xl font-semibold w-full lg:w-1/3 mb-3">
+              Feature
+            </h2>
+            <p className="text-base lg:text-xl w-full lg:w-2/3">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ut a
+              ipsam corporis voluptate veritatis doloribus beatae, quae incidunt
+              quis unde asperiores dolores consectetur. Molestias aut minus quod
+              rem consequatur.
+            </p>
+          </div>
+          <div className="flex flex-col lg:flex-row border-b py-10 lg:py-14">
+            <h2 className="text-xl lg:text-2xl font-semibold w-full lg:w-1/3 mb-3">
+              Project Overview
+            </h2>
+            <p className="text-base lg:text-xl w-full lg:w-2/3">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ut a
+              ipsam corporis voluptate veritatis doloribus beatae, quae incidunt
+              quis unde asperiores dolores consectetur. Molestias aut minus quod
+              rem consequatur.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 mb-5">
+            <div>
+              <h2>I need this website.</h2>
             </div>
-            <div className="flex flex-col lg:flex-row border-b py-5">
-              <h2 className="text-xl lg:text-2xl font-semibold">Feature</h2>
-              <p className="text-base lg:text-xl">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ut
-                a ipsam corporis voluptate veritatis doloribus beatae, quae
-                incidunt quis unde asperiores dolores consectetur. Molestias aut
-                minus quod rem consequatur.
-              </p>
-            </div>
-            <div className="flex flex-col lg:flex-row border-b py-5">
-              <h2 className="text-xl lg:text-2xl font-semibold">
-                Project Overview
-              </h2>
-              <p className="text-base lg:text-xl">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ut
-                a ipsam corporis voluptate veritatis doloribus beatae, quae
-                incidunt quis unde asperiores dolores consectetur. Molestias aut
-                minus quod rem consequatur.
-              </p>
+            <div className="flex items-center justify-between">
+              <Button>I need the same</Button>
+              <Button>Ask A Question</Button>
             </div>
           </div>
         </div>
