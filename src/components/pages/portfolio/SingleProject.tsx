@@ -4,12 +4,12 @@ import Image from "next/image";
 
 const SingleProject = ({ project }: { project: Project }) => {
   const { name, link, image } = project;
-  
+
   return (
     <section className="py-14 lg:py-20 bg-slate-50 dark:bg-slate-950">
       <Container>
         <div className="flex flex-col-reverse lg:flex-col">
-          <div className="flex items-center justify-between">
+          <div className="flex flex-col lg:flex-row items-center justify-between">
             <div>
               <h2 className="text-base lg:text-xl">
                 Name : <span className="font-semibold">{name}</span>
@@ -26,7 +26,7 @@ const SingleProject = ({ project }: { project: Project }) => {
                   width={40}
                   height={40}
                 />
-              <h2 className="mt-1">Name</h2>
+                <h2 className="mt-1">Name</h2>
               </div>
               <div>
                 <Image
@@ -35,16 +35,11 @@ const SingleProject = ({ project }: { project: Project }) => {
                   width={40}
                   height={40}
                 />
-              <h2 className="mt-1">Name</h2>
+                <h2 className="mt-1">Name</h2>
               </div>
               <div>
-                <Image
-                  src={image}
-                  alt={name}
-                  width={40}
-                  height={40}
-                />
-              <h2 className="mt-1">Name</h2>
+                <Image src={image} alt={name} width={40} height={40} />
+                <h2 className="mt-1">Name</h2>
               </div>
             </div>
           </div>
@@ -52,14 +47,45 @@ const SingleProject = ({ project }: { project: Project }) => {
             <Image
               src={project.image}
               alt="Technology logo"
-              width={900}
-              height={460}
+              width={800}
+              height={400}
               className="w-full mx-auto"
             />
           </div>
+          <div className="py-5">
+            <div className="flex flex-col lg:flex-row border-b py-5">
+              <h2 className="text-xl lg:text-2xl font-semibold">
+                Project Overview
+              </h2>
+              <p className="text-base lg:text-xl">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ut
+                a ipsam corporis voluptate veritatis doloribus beatae, quae
+                incidunt quis unde asperiores dolores consectetur. Molestias aut
+                minus quod rem consequatur.
+              </p>
+            </div>
+            <div className="flex flex-col lg:flex-row border-b py-5">
+              <h2 className="text-xl lg:text-2xl font-semibold">Feature</h2>
+              <p className="text-base lg:text-xl">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ut
+                a ipsam corporis voluptate veritatis doloribus beatae, quae
+                incidunt quis unde asperiores dolores consectetur. Molestias aut
+                minus quod rem consequatur.
+              </p>
+            </div>
+            <div className="flex flex-col lg:flex-row border-b py-5">
+              <h2 className="text-xl lg:text-2xl font-semibold">
+                Project Overview
+              </h2>
+              <p className="text-base lg:text-xl">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ut
+                a ipsam corporis voluptate veritatis doloribus beatae, quae
+                incidunt quis unde asperiores dolores consectetur. Molestias aut
+                minus quod rem consequatur.
+              </p>
+            </div>
+          </div>
         </div>
-
-        
       </Container>
     </section>
   );
