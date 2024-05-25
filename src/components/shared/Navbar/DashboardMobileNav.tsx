@@ -4,9 +4,10 @@ import { useState } from "react";
 import { X } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { CgMenuGridO } from "react-icons/cg";
+import { CgMenuGridO, CgWebsite } from "react-icons/cg";
 import { IoHome } from "react-icons/io5";
 import { MdContactPhone } from "react-icons/md";
+import { FaLaptopCode } from "react-icons/fa6";
 
 const DashboardMobileNav = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -23,7 +24,7 @@ const DashboardMobileNav = () => {
         />
       )}
       <div
-        className={`top-0 left-0 w-11/12 nav-bg py-1 px-10 fixed h-screen min-h-screen z-50 overflow-y-auto ease-in-out duration-500 ${
+        className={`top-0 left-0 w-11/12 nav-bg py-1 px-10 fixed h-screen min-h-screen z-60 overflow-y-auto ease-in-out duration-500 ${
           isMenuOpen ? "translate-x-0 " : "-translate-x-full"
         }`}
       >
@@ -63,6 +64,30 @@ const DashboardMobileNav = () => {
                     >
                       <IoHome className="size-6" aria-hidden="true" />
                       <span className="mx-2 text-sm font-medium">Dashboard</span>
+                    </Link>
+
+                    <Link
+                      className={
+                        currentPath === "/dashboard/skills"
+                          ? "NavMobile bg-color-yellow text-black"
+                          : "NavMobile"
+                      }
+                      href="/dashboard/skills"
+                    >
+                      <FaLaptopCode className="size-6" aria-hidden="true" />
+                      <span className="mx-2 text-sm font-medium">Skills</span>
+                    </Link>
+
+                    <Link
+                      className={
+                        currentPath === "/dashboard/project"
+                          ? "NavMobile bg-color-yellow text-black"
+                          : "NavMobile"
+                      }
+                      href="/dashboard/project"
+                    >
+                      <CgWebsite className="size-6" aria-hidden="true" />
+                      <span className="mx-2 text-sm font-medium">Projects</span>
                     </Link>
 
                     <button className="relative inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-1 focus:ring-slate-400 focus:ring-offset-1 focus:ring-offset-slate-50 w-full mt-4">

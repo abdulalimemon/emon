@@ -26,7 +26,7 @@ const MobileNavbar = () => {
         />
       )}
       <div
-        className={`top-0 left-0 w-11/12 nav-bg py-1 px-10 fixed h-screen min-h-screen z-50 overflow-y-auto ease-in-out duration-500 ${
+        className={`top-0 left-0 w-11/12 nav-bg py-1 px-10 fixed h-screen min-h-screen z-60 overflow-y-auto ease-in-out duration-500 ${
           isMenuOpen ? "translate-x-0 " : "-translate-x-full"
         }`}
       >
