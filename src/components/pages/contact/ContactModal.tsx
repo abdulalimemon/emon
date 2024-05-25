@@ -11,13 +11,35 @@ import {
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 
-const ContactModal = () => {
+type ContactModalProps = {
+  class: string;
+  text: string;
+  variant?:
+    | "link"
+    | "outline"
+    | "default"
+    | "destructive"
+    | "secondary"
+    | "ghost"
+    | null;
+};
+
+const ContactModal = ({
+  class: className,
+  text,
+  variant,
+}: ContactModalProps) => {
   return (
     <>
       <div>
         <Dialog>
           <DialogTrigger asChild>
-            <Button variant="outline">Edit Profile</Button>
+            <Button
+              className={`dark:text-black ${className}`}
+              variant={variant}
+            >
+              {text}
+            </Button>
           </DialogTrigger>
           <DialogContent className="sm:max-w-[425px]">
             <DialogHeader>

@@ -1,7 +1,7 @@
 import Container from "@/components/layout/Container";
-import { Button } from "@/components/ui/button";
 import { Project } from "@/type";
 import Image from "next/image";
+import ContactModal from "../contact/ContactModal";
 
 const SingleProject = ({ project }: { project: Project }) => {
   const { name, link, image } = project;
@@ -10,7 +10,7 @@ const SingleProject = ({ project }: { project: Project }) => {
     <section className="py-14 lg:py-20 bg-slate-50 dark:bg-slate-950">
       <Container>
         <div className="flex flex-col-reverse lg:flex-col">
-          <div className="flex flex-col lg:flex-row items-center justify-between">
+          <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between">
             <div>
               <h2 className="text-base lg:text-xl">
                 Name : <span className="font-semibold">{name}</span>
@@ -48,9 +48,9 @@ const SingleProject = ({ project }: { project: Project }) => {
             <Image
               src={project.image}
               alt="Technology logo"
-              width={800}
-              height={400}
-              className="w-[800px] h-[400px] mx-auto"
+              width={1000}
+              height={600}
+              className="lg:w-[1000px] lg:h-[600px] mx-auto"
             />
           </div>
         </div>
@@ -88,13 +88,21 @@ const SingleProject = ({ project }: { project: Project }) => {
               rem consequatur.
             </p>
           </div>
-          <div className="grid grid-cols-1 lg:grid-cols-2 mb-5">
+          <div className="grid grid-cols-1 lg:grid-cols-2 py-5 lg:py-10">
             <div>
-              <h2>I need this website.</h2>
+              <h2 className="py-3 lg:py-0">I need this website.</h2>
             </div>
-            <div className="flex items-center justify-between">
-              <Button>I need the same</Button>
-              <Button>Ask A Question</Button>
+            <div className="flex flex-col md:flex-row items-start md:items-center">
+              <ContactModal
+                class="mr-3"
+                text="I need the same"
+                variant="outline"
+              />
+              <ContactModal
+                class="mt-3 md:mt-0"
+                text="Ask A Question"
+                variant="outline"
+              />
             </div>
           </div>
         </div>
