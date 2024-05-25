@@ -24,7 +24,7 @@ const DashboardMobileNav = () => {
         />
       )}
       <div
-        className={`top-0 left-0 w-11/12 nav-bg py-1 px-10 fixed h-screen min-h-screen z-60 overflow-y-auto ease-in-out duration-500 ${
+        className={`top-0 left-0 w-11/12 nav-bg py-1 px-10 fixed h-screen min-h-screen z-50 overflow-y-auto ease-in-out duration-500 ${
           isMenuOpen ? "translate-x-0 " : "-translate-x-full"
         }`}
       >
@@ -45,18 +45,7 @@ const DashboardMobileNav = () => {
                   <div className="space-y-5">
                     <Link
                       className={
-                        currentPath === "/"
-                          ? "NavMobile bg-color-yellow text-black"
-                          : "NavMobile"
-                      }
-                      href="/"
-                    >
-                      <IoHome className="size-6" aria-hidden="true" />
-                      <span className="mx-2 text-sm font-medium">Home</span>
-                    </Link>
-                    <Link
-                      className={
-                        currentPath === "/Dashboard"
+                        currentPath === "/dashboard"
                           ? "NavMobile bg-color-yellow text-black"
                           : "NavMobile"
                       }

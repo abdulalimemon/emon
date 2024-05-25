@@ -1,9 +1,10 @@
 "use client";
 
 import Link from "next/link";
-import { Home, ShoppingCart } from "lucide-react";
+import { Home } from "lucide-react";
 import { usePathname } from "next/navigation";
 import { FaLaptopCode } from "react-icons/fa6";
+import { CgWebsite } from "react-icons/cg";
 
 const DashboardSidebar = () => {
   const currentPath = usePathname();
@@ -42,7 +43,7 @@ const DashboardSidebar = () => {
                   : "flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:text-primary  justify-center mt-3"
               }
             >
-              <FaLaptopCode className="size-5" />
+              <CgWebsite className="size-5" />
               Projects
             </Link>
           </nav>
