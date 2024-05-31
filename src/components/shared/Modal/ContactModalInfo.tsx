@@ -1,3 +1,5 @@
+"use client";
+
 import {
   DialogContent,
   DialogDescription,
@@ -42,17 +44,14 @@ const ContactModalInfo = () => {
   return (
     <DialogContent>
       <DialogHeader>
-        <DialogTitle>Get In Touch</DialogTitle>
-        <DialogDescription>
-          Make changes to your profile here. Click save when youre done.
+        <DialogTitle className="text-2xl text-center">Get In Touch</DialogTitle>
+        <DialogDescription className="text-center">
+        Ready to discuss your website requirements?
         </DialogDescription>
       </DialogHeader>
-      <div className="py-10 bg-slate-100 dark:bg-black">
-        <div className="p-3 py-5 rounded-lg bg-gray-50 dark:bg-slate-900 md:p-8 flex gap-5 md:gap-14 lg:flex-row flex-col-reverse">
+      <div>
+        <div className="py-5">
           <form onSubmit={handleSubmit(onSubmit)}>
-            <h2 className="text-2xl lg:text-4xl py-5 font-semibold">
-              Ready to discuss your website requirements?
-            </h2>
             <div className="-mx-2 md:items-center md:flex">
               <div className="flex-1 px-2">
                 <label className="block mb-2 font-semibold text-sm">
