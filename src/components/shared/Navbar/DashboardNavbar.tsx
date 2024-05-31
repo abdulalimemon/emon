@@ -28,6 +28,16 @@ const DashboardNavbar = () => {
             <ul className="inline-flex justify-center items-center space-x-8">
               <li>
                 <Link
+                  href="/"
+                  className={
+                    currentPath === "/"
+                      ? "decoration-none font-semibold text-link"
+                      : "decoration-none font-semibold hover:text-color-yellow"
+                  }
+                >
+                  Home
+                </Link>
+                <Link
                   href="/dashboard"
                   className={
                     currentPath === "/dashboard"

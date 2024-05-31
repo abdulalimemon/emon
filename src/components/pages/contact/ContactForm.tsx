@@ -1,7 +1,6 @@
 "use client";
 
 import Container from "@/components/layout/Container";
-import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { FieldValues, SubmitHandler, useForm } from "react-hook-form";
 import { toast } from "sonner";
@@ -10,13 +9,8 @@ import { FaQuoteLeft } from "react-icons/fa6";
 import Image from "next/image";
 import emon from "@/assets/emon.png";
 import { MdEmail } from "react-icons/md";
+import { TMessage } from "@/type";
 
-export type TVolunteerInputs = {
-  name: string;
-  email: string;
-  company: string;
-  message: string;
-};
 
 const ContactForm = () => {
   const {
@@ -24,9 +18,9 @@ const ContactForm = () => {
     handleSubmit,
     formState: { errors },
     reset,
-  } = useForm<TVolunteerInputs>();
+  } = useForm<TMessage>();
 
-  const onSubmit: SubmitHandler<TVolunteerInputs> = async (
+  const onSubmit: SubmitHandler<TMessage> = async (
     data: FieldValues
   ) => {
     try {

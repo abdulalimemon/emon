@@ -84,7 +84,7 @@ const DashboardMobileNav = () => {
                       <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-900 px-5 text-sm font-medium hover:bg-black text-white backdrop-blur-3xl transition duration-500">
                         <MdContactPhone className="size-6" aria-hidden="true" />
                         <span className="mx-2 text-sm font-semibold">
-                          Get in touch
+                          Log Out
                         </span>
                       </span>
                     </button>
