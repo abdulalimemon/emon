@@ -26,7 +26,7 @@ const DashboardNavbar = () => {
 
           <div className="hidden lg:flex items-center">
             <ul className="inline-flex justify-center items-center space-x-8">
-              <li>
+              <li className="space-x-5">
                 <Link
                   href="/"
                   className={

@@ -17,8 +17,8 @@ const DashboardSidebar = () => {
               href="/dashboard"
               className={
                 currentPath === "/dashboard"
-                  ? "flex items-center gap-3 rounded-lg px-3 py-2 transition-all hover:text-primary bg-slate-200 dark:bg-slate-800 justify-center mt-3"
-                  : "flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:text-primary  justify-center mt-3"
+                  ? "dashboard-active"
+                  : "dashboard-not-active"
               }
             >
               <Home className="size-5" />
@@ -28,8 +28,8 @@ const DashboardSidebar = () => {
               href="/dashboard/skills"
               className={
                 currentPath === "/dashboard/skills"
-                  ? "flex items-center gap-3 rounded-lg px-3 py-2 transition-all hover:text-primary bg-slate-200 dark:bg-slate-800 justify-center mt-3"
-                  : "flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:text-primary  justify-center mt-3"
+                  ? "dashboard-active"
+                  : "dashboard-not-active"
               }
             >
               <FaLaptopCode className="size-5" />
@@ -39,8 +39,8 @@ const DashboardSidebar = () => {
               href="/dashboard/project"
               className={
                 currentPath === "/dashboard/project"
-                  ? "flex items-center gap-3 rounded-lg px-3 py-2 transition-all hover:text-primary bg-slate-200 dark:bg-slate-800 justify-center mt-3"
-                  : "flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:text-primary  justify-center mt-3"
+                  ? "dashboard-active"
+                  : "dashboard-not-active"
               }
             >
               <CgWebsite className="size-5" />
