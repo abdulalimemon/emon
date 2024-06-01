@@ -64,14 +64,14 @@ const Navbar = () => {
               </li>
               <li>
                 <Link
-                  href="/pricing"
+                  href="/blogs"
                   className={
-                    currentPath === "/pricing"
+                    currentPath === "/blogs"
                       ? "decoration-none font-semibold text-link"
                       : "decoration-none font-semibold hover:text-color-yellow"
                   }
                 >
-                  Pricing
+                  Blogs
                 </Link>
               </li>
 

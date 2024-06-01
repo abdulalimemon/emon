@@ -96,14 +96,14 @@ const MobileNavbar = () => {
                     </Link>
                     <Link
                       className={
-                        currentPath === "/pricing"
+                        currentPath === "/blogs"
                           ? "NavMobile bg-color-yellow text-black"
                           : "NavMobile "
                       }
-                      href="/pricing"
+                      href="/blogs"
                     >
                       <ImPriceTags className="size-6" aria-hidden="true" />
-                      <span className="mx-2 text-sm font-medium">Pricing</span>
+                      <span className="mx-2 text-sm font-medium">Blogs</span>
                     </Link>
                     <Link
                       href="/contact"
