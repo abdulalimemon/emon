@@ -1,9 +1,11 @@
-import CommingSoon from "@/components/pages/commingSoon";
+import ProfileSection from "@/components/pages/about/ProfileSection";
+import ContactForm from "@/components/pages/contact/ContactForm";
 
 const AboutPage = () => {
   return (
     <>
-      <CommingSoon />
+      <ProfileSection />
+      <ContactForm />
     </>
   );
 };

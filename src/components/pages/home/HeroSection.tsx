@@ -4,7 +4,6 @@ import "@/style/index.css";
 import { IoMdCloudDownload } from "react-icons/io";
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 import { HeroHighlight } from "@/components/ui/hero-highlight";
-import { Button } from "@/components/ui/moving-border";
 
 const words = `I'm on a mission to create seamless and remarkable web
 experiences. With a strong foundation in MERN (MongoDB, Express,
