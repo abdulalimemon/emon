@@ -35,7 +35,7 @@ const AboutSection = () => {
             refining our work. I am excited about the opportunity to contribute
             to a dynamic team and help create exceptional digital experiences.
           </p>
-          <div className="flex items-center justify-start gap-2">
+          <div className="flex items-center justify-start gap-2 flex-wrap">
             <a
               href="https://www.facebook.com/abdulalimemon02"
               title="Facebook Profile"
@@ -110,16 +110,37 @@ const AboutSection = () => {
         </div>
         <div className="my-5">
           <h2 className="text-base lg:text-lg font-medium">My speciality</h2>
-          <div className="flex items-center gap-3">
-            <p className="px-2 py-1 border rounded-full">Web Developer</p>
-            <p className="px-2 py-1 border rounded-full">React Developer</p>
-            <p className="px-2 py-1 border rounded-full">
-              MERN Stack Developer
+          <div className="flex items-center gap-3 my-4 flex-wrap">
+            <p className="px-3 text-sm font-semibold flex items-center py-1 border rounded-full">
+              <span>Web Developer</span>
             </p>
-            <p className="px-2 py-1 border rounded-full">Open to collaborate</p>
-            <p className="px-2 py-1 border rounded-full">Software Developer</p>
-            <p className="px-2 py-1 border rounded-full">
-              Looking for new opportunities
+            <p className="px-3 text-sm font-semibold flex items-center py-1 border rounded-full">
+              <span>React Developer</span>
+            </p>
+            <p className="px-3 text-sm font-semibold flex items-center py-1 border rounded-full">
+              <span>MERN Stack Developer</span>
+            </p>
+            <p className="px-3 text-sm font-semibold flex items-center py-1 border rounded-full">
+              <span>Open to collaborate</span>
+            </p>
+            <p className="px-3 text-sm font-semibold flex items-center py-1 border rounded-full">
+              <span>Software Developer</span>
+            </p>
+            <p className="px-3 text-sm font-semibold flex items-center py-1 border rounded-full">
+              <span>Looking for new opportunities</span>
+            </p>
+          </div>
+        </div>
+        <div className="my-5">
+          <h2 className="text-base lg:text-lg font-medium">
+            Languages I&apos;m fluent in
+          </h2>
+          <div className="flex items-center gap-3 my-4 flex-wrap">
+            <p className="px-3 text-sm font-semibold py-1 border rounded-full">
+              Bengali
+            </p>
+            <p className="px-3 text-sm font-semibold py-1 border rounded-full">
+              English
             </p>
           </div>
         </div>
