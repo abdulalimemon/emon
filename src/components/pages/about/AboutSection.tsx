@@ -9,18 +9,31 @@ const AboutSection = () => {
         <div>
           <h2 className="text-xl lg:text-2xl font-bold">About</h2>
           <p className="text-sm lg:text-base my-5">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium
-            possimus maiores et sit? Pariatur voluptatibus sapiente, impedit
-            modi in dolorum itaque nulla labore possimus ex expedita
-            necessitatibus at aut? Iusto corporis esse recusandae quos assumenda
-            cupiditate, temporibus totam, rerum quisquam, architecto minima unde
-            accusamus beatae qui possimus fugit incidunt sit perferendis
-            molestias optio? Illum, cum aliquam. Quas sequi rerum illo in
-            voluptatem culpa repellat consectetur iure amet ex odit, debitis
-            animi voluptatum cupiditate temporibus, dignissimos neque quod
-            laborum maxime impedit eos ullam? Magnam consequatur aliquid quam
-            autem error? Natus, voluptates consequuntur. Delectus, corrupti
-            facilis! Commodi quos esse officia dolor ea?
+            Hi, I&apos;m Abdul Alim Emon, a front-end web developer specializing
+            in the MERN stack, based in Rangpur, Bangladesh. I recently
+            graduated with honors and am currently seeking opportunities to join
+            a reputable company as a front-end developer. <br /> <br />
+            I have a deep passion for coding and a strong desire to learn new
+            technologies. My primary goal is to create user-friendly and
+            engaging websites that leave a lasting impression on users. I enjoy
+            the challenge of turning complex problems into simple, beautiful,
+            and intuitive designs. <br /> <br />
+            I am proficient in the MERN stack (MongoDB, Express.js, React.js,
+            Node.js) and have extensive experience with various other
+            technologies including JavaScript, TypeScript, Tailwind CSS,
+            Bootstrap, Redux, and Next.js. This diverse skill set allows me to
+            build robust and scalable web applications.
+            <br /> <br />
+            Continuous learning is a core part of my professional journey. I
+            regularly update my skills to stay ahead of the curve and adapt
+            quickly to new technologies. This adaptability makes me a valuable
+            and versatile asset to any team.
+            <br /> <br />
+            In addition to my technical skills, I am a strong communicator and a
+            collaborative team player. I believe that the best solutions come
+            from working closely with others, sharing ideas, and continually
+            refining our work. I am excited about the opportunity to contribute
+            to a dynamic team and help create exceptional digital experiences.
           </p>
           <div className="flex items-center justify-start gap-2">
             <a
@@ -32,8 +45,9 @@ const AboutSection = () => {
               <Image
                 width={100}
                 height={30}
-                src="https://img.shields.io/badge/facebook-%232E87FB.svg?&style=for-the-badge&logo=facebook&logoColor=white"
+                src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white"
                 alt="facebook"
+                className="h-[30px]"
               />
             </a>
             <a
@@ -45,8 +59,9 @@ const AboutSection = () => {
               <Image
                 width={100}
                 height={30}
-                src="https://camo.githubusercontent.com/2cbe5bd2692ed16ec7d0079d13f4c524967f28d3e95d333ccf0e4f69a1b680db/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6769746875622d2532333234323932652e7376673f267374796c653d666f722d7468652d6261646765266c6f676f3d676974687562266c6f676f436f6c6f723d7768697465"
+                src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"
                 alt="github"
+                className="h-[30px]"
               />
             </a>
             <a
@@ -58,8 +73,9 @@ const AboutSection = () => {
               <Image
                 width={100}
                 height={30}
-                src="https://camo.githubusercontent.com/940cec181d9617509ad8a6cfac607b4ddf5fcc02dd3bf17590d1888f2bb070c7/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6c696e6b6564696e2d2532333145373742352e7376673f267374796c653d666f722d7468652d6261646765266c6f676f3d6c696e6b6564696e266c6f676f436f6c6f723d7768697465"
+                src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"
                 alt="linkedin"
+                className="h-[30px]"
               />
             </a>
             <a
@@ -71,8 +87,9 @@ const AboutSection = () => {
               <Image
                 width={100}
                 height={30}
-                src="https://camo.githubusercontent.com/2cf968f0f7b261ca1b4338113f54a149f63c4c55cfe9e3dc517c1f1168fb15b4/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f696e7374616772616d2d2532333030303030302e7376673f267374796c653d666f722d7468652d6261646765266c6f676f3d696e7374616772616d266c6f676f436f6c6f723d7768697465"
+                src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"
                 alt="instagram"
+                className="h-[30px]"
               />
             </a>
             <a
@@ -84,20 +101,26 @@ const AboutSection = () => {
               <Image
                 width={100}
                 height={30}
-                src="https://camo.githubusercontent.com/d31f8f214d3b6695a172ef98e23c1b02fd26063ac085cf22b90e9a943c3724ef/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f747769747465722d2532333030616365652e7376673f267374796c653d666f722d7468652d6261646765266c6f676f3d74776974746572266c6f676f436f6c6f723d7768697465"
+                src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white"
                 alt="Twitter"
+                className="h-[30px]"
               />
             </a>
           </div>
         </div>
         <div className="my-5">
           <h2 className="text-base lg:text-lg font-medium">My speciality</h2>
-          <div>
-            <span>Web Developer</span>
-            <span>React Developer</span>
-            <span>MERN Stack Developer</span>
-            <span>Open to collaborate</span>
-            <span>Web Developer</span>
+          <div className="flex items-center gap-3">
+            <p className="px-2 py-1 border rounded-full">Web Developer</p>
+            <p className="px-2 py-1 border rounded-full">React Developer</p>
+            <p className="px-2 py-1 border rounded-full">
+              MERN Stack Developer
+            </p>
+            <p className="px-2 py-1 border rounded-full">Open to collaborate</p>
+            <p className="px-2 py-1 border rounded-full">Software Developer</p>
+            <p className="px-2 py-1 border rounded-full">
+              Looking for new opportunities
+            </p>
           </div>
         </div>
       </Container>
