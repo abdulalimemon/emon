@@ -1,10 +1,9 @@
 import Container from "@/components/layout/Container";
 import Image from "next/image";
-import Link from "next/link";
 
 const AboutSection = () => {
   return (
-    <section className="py-10">
+    <section className="py-10 bg-slate-100 dark:bg-black">
       <Container>
         <div>
           <h2 className="text-xl lg:text-2xl font-bold">About</h2>

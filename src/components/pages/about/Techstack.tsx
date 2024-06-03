@@ -2,7 +2,7 @@ import Container from "@/components/layout/Container";
 
 const Techstack = () => {
   return (
-    <section className="py-10">
+    <section className="py-10 bg-slate-100 dark:bg-black">
       <Container>
         <div>
           <h2 className="text-xl lg:text-2xl font-bold">Tech Stack</h2>

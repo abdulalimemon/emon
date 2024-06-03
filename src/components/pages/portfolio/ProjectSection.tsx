@@ -14,7 +14,7 @@ const ProjectSection = ({ data }: { data: Project[] }) => {
         <div>
           <h2 className="text-center text-2xl lg:text-4xl font-semibold py-5 lg:py-10">
             Projects.
-            <div className="w-[40rem] h-10 mx-auto relative">
+            <div className="hidden lg:block w-[40rem] h-10 mx-auto relative">
               {/* Gradients */}
               <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-3/4 blur-sm" />
               <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-px w-3/4" />

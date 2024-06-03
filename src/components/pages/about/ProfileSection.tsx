@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const ProfileSection = () => {
   return (
-    <section>
+    <section className="bg-slate-100 dark:bg-black">
       <div className="w-full lg:hidden">
         <Image
           width={1200}
