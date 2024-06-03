@@ -108,9 +108,9 @@ const AboutSection = () => {
             </a>
           </div>
         </div>
-        <div className="my-5">
+        <div className="my-6">
           <h2 className="text-base lg:text-lg font-medium">My speciality</h2>
-          <div className="flex items-center gap-3 my-4 flex-wrap">
+          <div className="flex items-center gap-2 my-4 flex-wrap">
             <p className="px-3 text-sm font-semibold flex items-center py-1 border rounded-full">
               <span>Web Developer</span>
             </p>
@@ -131,11 +131,11 @@ const AboutSection = () => {
             </p>
           </div>
         </div>
-        <div className="my-5">
+        <div className="my-6">
           <h2 className="text-base lg:text-lg font-medium">
             Languages I&apos;m fluent in
           </h2>
-          <div className="flex items-center gap-3 my-4 flex-wrap">
+          <div className="flex items-center gap-2 my-4 flex-wrap">
             <p className="px-3 text-sm font-semibold py-1 border rounded-full">
               Bengali
             </p>
