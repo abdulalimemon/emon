@@ -1,6 +1,5 @@
 import SkillsTable from "@/components/pages/Dashboard/skills/SkillsTable";
 
-
 const SkillsPage = () => {
   return (
     <div className="flex flex-col">

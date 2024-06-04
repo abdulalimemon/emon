@@ -2,9 +2,7 @@ import { Button } from "@/components/ui/button";
 import {
   Table,
   TableBody,
-  TableCaption,
   TableCell,
-  TableFooter,
   TableHead,
   TableHeader,
   TableRow,
@@ -64,13 +62,11 @@ const SkillsTable = () => {
     <div className="flex py-10 items-center justify-center rounded-lg border border-dashed shadow-sm">
       <div className="flex flex-col gap-1 w-full lg:px-5">
         <div className="flex items-center justify-between mb-10">
-          <h3 className="text-xl font-semibold tracking-tight">
-            All Skills
-          </h3>
+          <h3 className="text-xl font-semibold tracking-tight">All Skills</h3>
           <Button className="dark:text-black">Add Skill</Button>
         </div>
         <div>
-          <Table>           
+          <Table>
             <TableHeader>
               <TableRow>
                 <TableHead className="w-1/4">Serial</TableHead>
@@ -93,10 +89,14 @@ const SkillsTable = () => {
                     />
                   </TableCell>
                   <TableCell>{item.title}</TableCell>
-                  <TableCell className="hidden md:block"><div className="flex gap-5">
-                  <Button className="dark:text-black">Edit Skill</Button>
-                  <Button className=" bg-red-500 hover:bg-red-800">Delete Skill</Button>
-                    </div></TableCell>
+                  <TableCell className="hidden md:block">
+                    <div className="flex gap-5">
+                      <Button className="dark:text-black">Edit Skill</Button>
+                      <Button className=" bg-red-500 hover:bg-red-800">
+                        Delete Skill
+                      </Button>
+                    </div>
+                  </TableCell>
                 </TableRow>
               ))}
             </TableBody>
