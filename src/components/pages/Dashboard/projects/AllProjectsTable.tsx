@@ -11,6 +11,7 @@ import Image from "next/image";
 import { FaRegEdit } from "react-icons/fa";
 import { RiDeleteBin4Line } from "react-icons/ri";
 import { TiDocumentAdd } from "react-icons/ti";
+import Link from "next/link";
 
 const projects = [
   {
@@ -63,12 +64,14 @@ const projects = [
 const AllProjectsTable = () => {
   return (
     <div className="flex py-10 items-center justify-center rounded-lg border border-dashed shadow-sm">
-      <div className="flex flex-col gap-1 w-full lg:px-5">
+      <div className="flex flex-col gap-1 w-full px-5">
         <div className="flex items-center justify-between mb-10">
           <h3 className="text-xl font-semibold tracking-tight">All Projects</h3>
-          <Button className="dark:text-black">
-            <TiDocumentAdd className="size-5" /> Add
-          </Button>
+          <Link href="/dashboard/project/add">
+            <Button className="dark:text-black">
+              <TiDocumentAdd className="size-5 mr-3" /> Add Project
+            </Button>
+          </Link>
         </div>
         <div>
           <Table>
