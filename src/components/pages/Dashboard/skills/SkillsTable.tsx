@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { FaRegEdit } from "react-icons/fa";
 import {
   Table,
   TableBody,
@@ -8,6 +9,8 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import Image from "next/image";
+import { RiDeleteBin4Line } from "react-icons/ri";
+import { TiDocumentAdd } from "react-icons/ti";
 
 const projects = [
   {
@@ -63,7 +66,9 @@ const SkillsTable = () => {
       <div className="flex flex-col gap-1 w-full lg:px-5">
         <div className="flex items-center justify-between mb-10">
           <h3 className="text-xl font-semibold tracking-tight">All Skills</h3>
-          <Button className="dark:text-black">Add Skill</Button>
+          <Button className="dark:text-black">
+            <TiDocumentAdd className="size-5" /> Add
+          </Button>
         </div>
         <div>
           <Table>
@@ -91,9 +96,11 @@ const SkillsTable = () => {
                   <TableCell>{item.title}</TableCell>
                   <TableCell className="hidden md:block">
                     <div className="flex gap-5">
-                      <Button className="dark:text-black">Edit Skill</Button>
+                      <Button className="dark:text-black">
+                        <FaRegEdit className="size-5" />
+                      </Button>
                       <Button className=" bg-red-500 hover:bg-red-800">
-                        Delete Skill
+                        <RiDeleteBin4Line className="size-5" />
                       </Button>
                     </div>
                   </TableCell>
