@@ -5,6 +5,7 @@ import { Home } from "lucide-react";
 import { usePathname } from "next/navigation";
 import { FaLaptopCode } from "react-icons/fa6";
 import { CgWebsite } from "react-icons/cg";
+import { RiArticleFill } from "react-icons/ri";
 
 const DashboardSidebar = () => {
   const currentPath = usePathname();
@@ -45,6 +46,17 @@ const DashboardSidebar = () => {
             >
               <CgWebsite className="size-5" />
               Projects
+            </Link>
+            <Link
+              href="/dashboard/blogs"
+              className={
+                currentPath === "/dashboard/blogs"
+                  ? "dashboard-active"
+                  : "dashboard-not-active"
+              }
+            >
+              <RiArticleFill className="size-5" />
+              Blogs
             </Link>
           </nav>
         </div>

@@ -8,6 +8,7 @@ import { CgMenuGridO, CgWebsite } from "react-icons/cg";
 import { IoHome } from "react-icons/io5";
 import { MdContactPhone } from "react-icons/md";
 import { FaLaptopCode } from "react-icons/fa6";
+import { RiArticleFill } from "react-icons/ri";
 
 const DashboardMobileNav = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -52,7 +53,9 @@ const DashboardMobileNav = () => {
                       href="/dashboard"
                     >
                       <IoHome className="size-6" aria-hidden="true" />
-                      <span className="mx-2 text-sm font-medium">Dashboard</span>
+                      <span className="mx-2 text-sm font-medium">
+                        Dashboard
+                      </span>
                     </Link>
 
                     <Link
@@ -77,6 +80,18 @@ const DashboardMobileNav = () => {
                     >
                       <CgWebsite className="size-6" aria-hidden="true" />
                       <span className="mx-2 text-sm font-medium">Projects</span>
+                    </Link>
+
+                    <Link
+                      className={
+                        currentPath === "/dashboard/project"
+                          ? "NavMobile bg-color-yellow text-black"
+                          : "NavMobile"
+                      }
+                      href="/dashboard/blogs"
+                    >
+                      <RiArticleFill className="size-6" aria-hidden="true" />
+                      <span className="mx-2 text-sm font-medium">Blogs</span>
                     </Link>
 
                     <button className="relative inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-1 focus:ring-slate-400 focus:ring-offset-1 focus:ring-offset-slate-50 w-full mt-4">
