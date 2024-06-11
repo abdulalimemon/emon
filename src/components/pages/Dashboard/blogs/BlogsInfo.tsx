@@ -22,7 +22,7 @@ const BlogsInfo = () => {
             </CardDescription>
           </CardHeader>
           <CardFooter>
-            <Link href="/dashboard/project/add">
+            <Link href="/dashboard/blogs/add">
               <Button className="dark:text-black">Create New Blog</Button>
             </Link>
           </CardFooter>

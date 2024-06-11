@@ -67,7 +67,7 @@ const AllBlogTable = () => {
       <div className="flex flex-col gap-1 w-full px-5">
         <div className="flex items-center justify-between mb-10">
           <h3 className="text-xl font-semibold tracking-tight">All Blogs</h3>
-          <Link href="/dashboard/project/add">
+          <Link href="/dashboard/blogs/add">
             <Button className="dark:text-black">
               <TiDocumentAdd className="size-5 mr-3" /> Add Blog
             </Button>
