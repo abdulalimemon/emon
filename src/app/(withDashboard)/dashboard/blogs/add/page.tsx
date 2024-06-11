@@ -1,10 +1,13 @@
-import BlogsEditor from "@/components/pages/Dashboard/blogs/BlogsEditor";
+import dynamic from "next/dynamic";
+
+
+const Editor = dynamic(() => import("@/components/pages/Dashboard/blogs/BlogsEditor"), { ssr: false });
 
 const Page = () => {
   return (
     <div className="flex flex-col">
       <main className="flex flex-1 flex-col gap-4 p-4 lg:gap-6 lg:p-6">
-        <BlogsEditor />
+        <Editor />
       </main>
     </div>
   );
