@@ -63,17 +63,22 @@ const projects = [
 
 const AllBlogTable = () => {
   return (
-    <div className="flex py-10 items-center justify-center rounded-lg border border-dashed shadow-sm">
-      <div className="flex flex-col gap-1 w-full px-5">
-        <div className="flex items-center justify-between mb-10">
-          <h3 className="text-xl font-semibold tracking-tight">All Blogs</h3>
-          <Link href="/dashboard/blogs/add">
-            <Button className="dark:text-black">
-              <TiDocumentAdd className="size-5 mr-3" /> Add Blog
-            </Button>
-          </Link>
+    <>
+      <div className="flex py-10 items-center justify-center rounded-lg border border-dashed shadow-sm">
+        <div className="flex flex-col gap-1 w-full px-5">
+          <div className="flex items-center justify-between mb-10">
+            <h3 className="text-xl font-semibold tracking-tight">All Blogs</h3>
+            <Link href="/dashboard/blogs/add">
+              <Button className="dark:text-black">
+                <TiDocumentAdd className="size-5 mr-3" /> Add Blog
+              </Button>
+            </Link>
+          </div>
         </div>
-        <div>
+      </div>
+
+      <div className="flex py-10 items-center justify-center rounded-lg border border-dashed shadow-sm">
+        <div className="flex flex-col gap-1 w-full px-5">
           <Table>
             <TableHeader>
               <TableRow>
@@ -113,7 +118,7 @@ const AllBlogTable = () => {
           </Table>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
