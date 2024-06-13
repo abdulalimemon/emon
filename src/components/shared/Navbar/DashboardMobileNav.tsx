@@ -84,7 +84,7 @@ const DashboardMobileNav = () => {
 
                     <Link
                       className={
-                        currentPath === "/dashboard/project"
+                        currentPath === "/dashboard/blogs"
                           ? "NavMobile bg-color-yellow text-black"
                           : "NavMobile"
                       }
