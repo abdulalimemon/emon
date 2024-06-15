@@ -48,12 +48,14 @@ const Techstack = () => {
           </div>
         </div>
         <div className="my-5">
-          <h2 className="text-base lg:text-lg font-medium">Back End Technologies</h2>
+          <h2 className="text-base lg:text-lg font-medium">
+            Back End Technologies
+          </h2>
           <div className="flex items-center gap-2 my-4 flex-wrap">
-          <p className="px-3 text-sm font-semibold py-1 border rounded-full">
+            <p className="px-3 text-sm font-semibold py-1 border rounded-full">
               Node JS
             </p>
-          <p className="px-3 text-sm font-semibold py-1 border rounded-full">
+            <p className="px-3 text-sm font-semibold py-1 border rounded-full">
               Express JS
             </p>
             <p className="px-3 text-sm font-semibold py-1 border rounded-full">
@@ -64,32 +66,32 @@ const Techstack = () => {
         <div className="my-5">
           <h2 className="text-base lg:text-lg font-medium">Tools</h2>
           <div className="flex items-center gap-2 my-4 flex-wrap">
-          <p className="px-3 text-sm font-semibold py-1 border rounded-full">
-          Postman
+            <p className="px-3 text-sm font-semibold py-1 border rounded-full">
+              Postman
             </p>
             <p className="px-3 text-sm font-semibold py-1 border rounded-full">
-            Figma
+              Figma
             </p>
             <p className="px-3 text-sm font-semibold py-1 border rounded-full">
-            Trello
+              Trello
             </p>
             <p className="px-3 text-sm font-semibold py-1 border rounded-full">
-            Git
+              Git
             </p>
             <p className="px-3 text-sm font-semibold py-1 border rounded-full">
-            npm
+              npm
             </p>
             <p className="px-3 text-sm font-semibold py-1 border rounded-full">
-            Yarn
+              Yarn
             </p>
             <p className="px-3 text-sm font-semibold py-1 border rounded-full">
-            GitHub
+              GitHub
             </p>
             <p className="px-3 text-sm font-semibold py-1 border rounded-full">
-            Vercel
+              Vercel
             </p>
             <p className="px-3 text-sm font-semibold py-1 border rounded-full">
-            Netlify
+              Netlify
             </p>
           </div>
         </div>

@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: "/favicon.ico", 
+        url: "/favicon.ico",
         href: "/favicon.ico",
       },
     ],
@@ -33,7 +33,6 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           {children}
-          
         </ThemeProvider>
       </body>
     </html>

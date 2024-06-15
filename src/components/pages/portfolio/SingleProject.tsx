@@ -90,7 +90,12 @@ const SingleProject = ({ project }: { project: Project }) => {
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 py-5 lg:py-10">
             <div>
-              <h2 className="py-3 lg:py-0 text-base lg:text-xl">If you&apos;d like to learn more about this project, have any questions, or feel inspired to create a similar one, please don&apos;t hesitate to reach out. I&apos;m here to help and would love to share insights and guidance with you.</h2>
+              <h2 className="py-3 lg:py-0 text-base lg:text-xl">
+                If you&apos;d like to learn more about this project, have any
+                questions, or feel inspired to create a similar one, please
+                don&apos;t hesitate to reach out. I&apos;m here to help and
+                would love to share insights and guidance with you.
+              </h2>
             </div>
             <div className="flex flex-col lg:flex-row items-start md:items-center gap-3 md:justify-end">
               <ContactModal text="I need the same" />

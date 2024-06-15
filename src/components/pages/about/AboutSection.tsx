@@ -10,8 +10,8 @@ const AboutSection = () => {
           <p className="text-sm lg:text-base my-5">
             Hi, I&apos;m Abdul Alim Emon, a front-end web developer specializing
             in the MERN stack, based in Rangpur, Bangladesh. I recently
-            graduated with honors and currently seeking opportunities to join
-            a reputable company as a front-end developer. <br /> <br />
+            graduated with honors and currently seeking opportunities to join a
+            reputable company as a front-end developer. <br /> <br />
             I have a deep passion for coding and a strong desire to learn new
             technologies. My primary goal is to create user-friendly and
             engaging websites that leave a lasting impression on users. I enjoy

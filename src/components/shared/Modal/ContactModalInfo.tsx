@@ -20,9 +20,7 @@ const ContactModalInfo = () => {
     reset,
   } = useForm<TMessage>();
 
-  const onSubmit: SubmitHandler<TMessage> = async (
-    data: FieldValues
-  ) => {
+  const onSubmit: SubmitHandler<TMessage> = async (data: FieldValues) => {
     try {
       const volunteerInfo = {
         name: data.name,
@@ -46,7 +44,7 @@ const ContactModalInfo = () => {
       <DialogHeader>
         <DialogTitle className="text-2xl text-center">Get In Touch</DialogTitle>
         <DialogDescription className="text-center">
-        Ready to discuss your website requirements?
+          Ready to discuss your website requirements?
         </DialogDescription>
       </DialogHeader>
       <div>

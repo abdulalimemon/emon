@@ -7,7 +7,7 @@ const PortfolioPage = async () => {
   const data = await res.json();
   return (
     <>
-      <ProjectSection data={data} />     
+      <ProjectSection data={data} />
     </>
   );
 };

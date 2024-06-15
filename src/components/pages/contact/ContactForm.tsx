@@ -11,7 +11,6 @@ import emon from "@/assets/emon.png";
 import { MdEmail } from "react-icons/md";
 import { TMessage } from "@/type";
 
-
 const ContactForm = () => {
   const {
     register,
@@ -20,9 +19,7 @@ const ContactForm = () => {
     reset,
   } = useForm<TMessage>();
 
-  const onSubmit: SubmitHandler<TMessage> = async (
-    data: FieldValues
-  ) => {
+  const onSubmit: SubmitHandler<TMessage> = async (data: FieldValues) => {
     try {
       const volunteerInfo = {
         name: data.name,

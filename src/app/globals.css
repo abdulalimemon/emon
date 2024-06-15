@@ -79,13 +79,14 @@
   body {
     @apply bg-background text-foreground;
   }
-  .text-color-yellow{
+  .text-color-yellow {
     @apply text-[#FFCD38];
   }
-  .bg-color-yellow{
+  .bg-color-yellow {
     @apply bg-[#FFCD38];
   }
-  .nav-bg, .footer-bg{
+  .nav-bg,
+  .footer-bg {
     @apply bg-[#0C1A3B] dark:bg-[#0C1222] text-text;
   }
   .button-bg {
@@ -94,24 +95,23 @@
   .NavMobile {
     @apply flex transform items-center justify-center rounded-lg px-3 py-2 text-gray-200 transition-colors duration-300;
   }
-  .dashboard-active{
+  .dashboard-active {
     @apply flex items-center gap-3 rounded-lg px-3 py-2 transition-all hover:text-primary bg-slate-200 dark:bg-slate-800 justify-start mt-3;
   }
-  .dashboard-not-active{
+  .dashboard-not-active {
     @apply flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:text-primary  justify-start mt-3;
   }
 }
 
-
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   width: 1rem;
 }
 
-::-webkit-scrollbar-track{
-  background-color: #0F172A;
+::-webkit-scrollbar-track {
+  background-color: #0f172a;
 }
 ::-webkit-scrollbar-thumb {
-  background: #B3C5EF;
+  background: #b3c5ef;
   border: 5px solid transparent;
   border-radius: 10px;
   background-clip: content-box;

@@ -7,8 +7,10 @@ const AboutContactSection = () => {
       <Container>
         <div className="h-[200px] w-full rounded-lg bg-slate-900 text-white">
           <div className="flex flex-col lg:flex-row items-center justify-center lg:justify-between h-full px-5 lg:px-10 gap-5">
-          <h2 className="text-2xl lg:text-4xl font-bold text-center lg:text-start">Let&apos;s create something amazing together!</h2>
-          <AboutModal text="Reach out today!" />
+            <h2 className="text-2xl lg:text-4xl font-bold text-center lg:text-start">
+              Let&apos;s create something amazing together!
+            </h2>
+            <AboutModal text="Reach out today!" />
           </div>
         </div>
       </Container>

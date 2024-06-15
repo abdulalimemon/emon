@@ -17,7 +17,7 @@ const MoreProject = ({ data }: { data: Project[] }) => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-          {data.slice(0,4).map((item) => (
+          {data.slice(0, 4).map((item) => (
             <div key={item._id} className="p-[1px]">
               <div className="flex flex-col p-5 lg:py-10 lg:px-12 shadow-lg w-full gap-5 rounded-xl bg-gray-50 dark:bg-slate-900">
                 <div className="w-full lg:w-6/12 flex flex-col justify-evenly">

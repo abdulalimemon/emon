@@ -7,9 +7,7 @@ const ContactModal = () => {
     <>
       <Dialog>
         <DialogTrigger asChild>
-          <Button >
-            Button
-          </Button>
+          <Button>Button</Button>
         </DialogTrigger>
         <ContactModalInfo />
       </Dialog>
