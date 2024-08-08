@@ -4,6 +4,7 @@ import "@/style/index.css";
 import { IoMdCloudDownload } from "react-icons/io";
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 import { HeroHighlight } from "@/components/ui/hero-highlight";
+import { Cover } from "@/components/ui/cover";
 
 const words = `I'm on a mission to create seamless and remarkable web
 experiences. With a strong foundation in MERN (MongoDB, Express,
@@ -21,7 +22,9 @@ const HeroSection = () => {
                 Hi there, I&apos;m{" "}
               </p>
               <h2 className="text-4xl md:text-8xl font-bold pb-5 pt-5 text-transparent bg-clip-text bg-gradient-to-r from-[#FFCD38] to-[#F7CE68]">
-                Abdul Alim Emon
+                <span>
+                <Cover>Abdul Alim Emon</Cover>
+                </span>
               </h2>
               <h3 className="text-3xl md:text-6xl pb-5 font-semibold">
                 Passionate Front End Web Developer
