@@ -8,7 +8,6 @@ const nextConfig = {
       },
     ],
     dangerouslyAllowSVG: true,
-    domains: ["api.microlink.io"],
   },
 };
 
