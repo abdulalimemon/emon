@@ -1,4 +1,5 @@
 import Container from "@/components/layout/Container";
+import { LinkPreview } from "@/components/ui/link-preview";
 import Image from "next/image";
 
 const AboutSection = () => {
@@ -35,76 +36,76 @@ const AboutSection = () => {
             to a dynamic team and help create exceptional digital experiences.
           </p>
           <div className="flex items-center justify-start gap-2 flex-wrap">
-            <a
-              href="https://www.facebook.com/abdulalimemon02"
-              title="Facebook Profile"
+            <LinkPreview
+              url="https://www.facebook.com/abdulalimemon02"
               target="_blank"
-              rel="noreferrer"
             >
-              <Image
-                width={100}
-                height={30}
-                src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white"
-                alt="facebook"
-                className="h-[30px]"
-              />
-            </a>
-            <a
-              href="https://github.com/abdulalimemon"
-              title="Github"
+              <a
+                href="https://www.facebook.com/abdulalimemon02"
+                target="_blank"
+              >
+                <Image
+                  width={100}
+                  height={30}
+                  src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white"
+                  alt="facebook"
+                  className="h-[30px]"
+                />
+              </a>
+            </LinkPreview>
+            <LinkPreview url="https://github.com/abdulalimemon" target="_blank">
+              <a href="https://github.com/abdulalimemon" target="_blank">
+                <Image
+                  width={100}
+                  height={30}
+                  src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"
+                  alt="github"
+                  className="h-[30px]"
+                />
+              </a>
+            </LinkPreview>
+            <LinkPreview
+              url="https://linkedin.com/in/abdulalimemon"
               target="_blank"
-              rel="noreferrer"
             >
-              <Image
-                width={100}
-                height={30}
-                src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"
-                alt="github"
-                className="h-[30px]"
-              />
-            </a>
-            <a
-              href="https://linkedin.com/in/abdulalimemon"
-              title="Linkedin"
+              <a href="https://linkedin.com/in/abdulalimemon" target="_blank">
+                <Image
+                  width={100}
+                  height={30}
+                  src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"
+                  alt="linkedin"
+                  className="h-[30px]"
+                />
+              </a>
+            </LinkPreview>
+            <LinkPreview
+              url="https://instagram.com/emon.web_developer"
               target="_blank"
-              rel="noreferrer"
             >
-              <Image
-                width={100}
-                height={30}
-                src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"
-                alt="linkedin"
-                className="h-[30px]"
-              />
-            </a>
-            <a
-              href="https://instagram.com/emon.web_developer"
-              title="Instagram"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <Image
-                width={100}
-                height={30}
-                src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"
-                alt="instagram"
-                className="h-[30px]"
-              />
-            </a>
-            <a
-              href="https://x.com/abdulalimemon"
-              title="Twitter"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <Image
-                width={100}
-                height={30}
-                src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white"
-                alt="Twitter"
-                className="h-[30px]"
-              />
-            </a>
+              <a
+                href="https://instagram.com/emon.web_developer"
+                target="_blank"
+              >
+                <Image
+                  width={100}
+                  height={30}
+                  src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"
+                  alt="instagram"
+                  className="h-[30px]"
+                />
+              </a>
+            </LinkPreview>
+            <LinkPreview url="https://x.com/abdulalimemon" target="_blank">
+              <a href="https://x.com/abdulalimemon" target="_blank">
+                <Image
+                  width={100}
+                  height={30}
+                  src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white"
+                  alt="Twitter"
+                  className="h-[30px]"
+                />
+              </a>
+            </LinkPreview>
           </div>
         </div>
         <div className="my-6">
