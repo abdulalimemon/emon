@@ -7,7 +7,7 @@ const SingleProject = ({ project }: { project: Project }) => {
   const { name, link, image } = project;
 
   return (
-    <section className="py-14 lg:py-20 bg-slate-50 dark:bg-slate-950">
+    <section className="py-10 md:py-14 bg-slate-50 dark:bg-slate-950">
       <Container>
         <div className="flex flex-col-reverse lg:flex-col">
           <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between">

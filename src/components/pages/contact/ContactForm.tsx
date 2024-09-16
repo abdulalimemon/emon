@@ -39,7 +39,7 @@ const ContactForm = () => {
     }
   };
   return (
-    <section className="py-10 md:py-20 bg-slate-100 dark:bg-black">
+    <section className="py-10 md:py-14 bg-slate-100 dark:bg-black">
       <Container className="py-5">
         <div className="p-3 py-5 rounded-lg bg-gray-50 dark:bg-slate-900 md:p-8 flex gap-5 md:gap-14 lg:flex-row flex-col-reverse">
           <form onSubmit={handleSubmit(onSubmit)} className="lg:w-8/12">

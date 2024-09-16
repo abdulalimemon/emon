@@ -53,7 +53,7 @@ const FaqSection = () => {
     setIsOpen((prevIdx) => (prevIdx === idx ? null : idx));
   };
   return (
-    <section className="py-20 bg-slate-100 dark:bg-black">
+    <section className="py-10 md:py-14 bg-slate-100 dark:bg-black">
       <Container>
         <div>
           <h2 className="text-center text-2xl lg:text-4xl font-semibold py-5 lg:py-10">
