@@ -1,11 +1,31 @@
-export type Project = {
-  _id: string;
-  name: string;
+type Icon = {
   title: string;
-  link: string;
+  image: string;
+};
+
+type Feature = {
+  title: string;
+  details: string;
+};
+
+type Technology = {
+  name: string;
+  details: string;
+};
+
+export type Project = {
+  name: string;
+  id: number;
+  title: string;
   shortdetail: string;
   image: string;
-  description: string;
+  icons: Icon[];
+  link: string;
+  url: string;
+  urlName: string;
+  projectOverview: string;
+  feature: Feature[];
+  technology: Technology[];
 };
 
 export type TMessage = {
