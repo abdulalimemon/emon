@@ -1,16 +1,7 @@
 import Container from "@/components/layout/Container";
-import { Button } from "@/components/ui/button";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import Image from "next/image";
+import Link from "next/link";
 
 const ServiceTabs = () => {
   return (
@@ -29,7 +20,7 @@ const ServiceTabs = () => {
         </div>
         <div>
           <Tabs defaultValue="reactOrnext" className="w-full">
-            <TabsList className="grid w-full grid-cols-1 md:grid-cols-2 lg:grid-cols-4 place-content-center bg-slate-900 py-24 md:py-14 lg:py-8">
+            <TabsList className="grid w-full grid-cols-1 md:grid-cols-2 lg:grid-cols-4 place-content-center bg-slate-900 dark:bg-slate-800 py-24 md:py-14 lg:py-8">
               <TabsTrigger
                 value="reactOrnext"
                 className="py-3 lg:py-4 text-white"
@@ -54,110 +45,32 @@ const ServiceTabs = () => {
             </TabsList>
             <TabsContent value="reactOrnext">
               <div className="bg-white rounded-xl dark:bg-[#0F172A] p-6 md:p-8">
-                <div className="flex flex-col items-center justify-center space-y-6">
-                  <svg
-                    width={75}
-                    viewBox="0 0 1024 1024"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="#000000"
-                  >
-                    {" "}
-                    <g strokeWidth="0"></g>{" "}
-                    <g
-                      id="navgateui"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    ></g>{" "}
-                    <g id="navgateui">
-                      <path
-                        fill="#16BAC5"
-                        d="M512 64a448 448 0 1 1 0 896 448 448 0 0 1 0-896zm0 192a58.432 58.432 0 0 0-58.24 63.744l23.36 256.384a35.072 35.072 0 0 0 69.76 0l23.296-256.384A58.432 58.432 0 0 0 512 256zm0 512a51.2 51.2 0 1 0 0-102.4 51.2 51.2 0 0 0 0 102.4z"
-                      ></path>
-                    </g>
-                  </svg>
-                  <h6 className="text-center font-medium text-slate-700 dark:text-white/80">
-                    You have enough points to redeem Keep going.!
-                  </h6>
-                  <button className="rounded-full bg-[#16BAC5] px-6 py-2 text-white ">
-                    Redeem now
-                  </button>
-                  <button className="text-slate-500 hover:underline dark:text-white/60">
-                    Redeem later
-                  </button>
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-10">
+                  <div className="flex flex-col items-center justify-center space-y-6">
+                    <h6 className="font-semibold text-xl lg:text-2xl">{}</h6>
+                    <p className="text-sm lg:text-base">{}</p>
+                    <Link href="/contact">
+                      <button className="relative inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-1 focus:ring-slate-400 focus:ring-offset-1 focus:ring-offset-slate-50">
+                        <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
+                        <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-100 dark:bg-slate-900 px-20 py-5 text-sm font-medium text-black hover:bg-slate-200 hover:dark:bg-black dark:text-white backdrop-blur-3xl transition duration-500">
+                          Get In Touch
+                        </span>
+                      </button>
+                    </Link>
+                  </div>
+                  <div>
+                    <div>
+                      <Image
+                        src=''
+                        alt=''
+                        width={600}
+                        height={150}
+                        className="w-full"
+                      />
+                    </div>
+                  </div>
                 </div>
               </div>
-            </TabsContent>
-            <TabsContent value="spa">
-              <Card>
-                <CardHeader>
-                  <CardTitle>Password</CardTitle>
-                  <CardDescription>
-                    Change your password here. After saving, you&apos;ll be
-                    logged out.
-                  </CardDescription>
-                </CardHeader>
-                <CardContent className="space-y-2">
-                  <div className="space-y-1">
-                    <Label htmlFor="current">Current password</Label>
-                    <Input id="current" type="password" />
-                  </div>
-                  <div className="space-y-1">
-                    <Label htmlFor="new">New password</Label>
-                    <Input id="new" type="password" />
-                  </div>
-                </CardContent>
-                <CardFooter>
-                  <Button>Save password</Button>
-                </CardFooter>
-              </Card>
-            </TabsContent>
-            <TabsContent value="fullStack">
-              <Card>
-                <CardHeader>
-                  <CardTitle>Password</CardTitle>
-                  <CardDescription>
-                    Change your password here. After saving, you&apos;ll be
-                    logged out.
-                  </CardDescription>
-                </CardHeader>
-                <CardContent className="space-y-2">
-                  <div className="space-y-1">
-                    <Label htmlFor="current">Current password</Label>
-                    <Input id="current" type="password" />
-                  </div>
-                  <div className="space-y-1">
-                    <Label htmlFor="new">New password</Label>
-                    <Input id="new" type="password" />
-                  </div>
-                </CardContent>
-                <CardFooter>
-                  <Button>Save password</Button>
-                </CardFooter>
-              </Card>
-            </TabsContent>
-            <TabsContent value="maintenance">
-              <Card>
-                <CardHeader>
-                  <CardTitle>Password</CardTitle>
-                  <CardDescription>
-                    Change your password here. After saving, you&apos;ll be
-                    logged out.
-                  </CardDescription>
-                </CardHeader>
-                <CardContent className="space-y-2">
-                  <div className="space-y-1">
-                    <Label htmlFor="current">Current password</Label>
-                    <Input id="current" type="password" />
-                  </div>
-                  <div className="space-y-1">
-                    <Label htmlFor="new">New password</Label>
-                    <Input id="new" type="password" />
-                  </div>
-                </CardContent>
-                <CardFooter>
-                  <Button>Save password</Button>
-                </CardFooter>
-              </Card>
             </TabsContent>
           </Tabs>
         </div>

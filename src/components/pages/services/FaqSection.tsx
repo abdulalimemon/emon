@@ -77,7 +77,7 @@ const FaqSection = () => {
                 onClick={() => toggle(idx)}
                 className="flex h-full w-full items-center justify-between font-medium outline-none text-black dark:text-white"
               >
-                <span className="text-base font-semibold lg:text-xl text-black dark:text-white text-left">{PerAccordion.title}</span>
+                <span className="text-base font-semibold lg:text-lg text-black dark:text-white text-left">{PerAccordion.title}</span>
                 <span className="rounded-full">
                   <svg
                     className="ml-8 size-3 shrink-0 dark:fill-white"
@@ -111,7 +111,7 @@ const FaqSection = () => {
                     : "grid-rows-[0fr] opacity-0"
                 }`}
               >
-                <div className="overflow-hidden pr-4 text-black dark:text-white">
+                <div className="overflow-hidden text-sm lg:text-base pr-4 text-black dark:text-white">
                   {PerAccordion.description}
                 </div>
               </div>
