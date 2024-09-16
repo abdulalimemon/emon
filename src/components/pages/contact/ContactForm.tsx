@@ -204,7 +204,7 @@ const ContactForm = () => {
           <div className="bg-black lg:w-4/12 rounded-md px-5 py-10">
             <div className="flex flex-col justify-between h-full">
               <div>
-                <FaQuoteLeft className="size-5 lg:size-7 text-link" />
+                <FaQuoteLeft className="size-5 lg:size-7 text-color-yellow" />
                 <h2 className="my-5 text-text text-sm lg:text-base">
                   If you have any questions or suggestions regarding any
                   projects, please don&apos;t hesitate to contact me. To contact

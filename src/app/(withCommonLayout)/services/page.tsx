@@ -1,11 +1,11 @@
 import ContactSection from "@/components/pages/home/ContactSection";
 import FaqSection from "@/components/pages/services/FaqSection";
-import ServicesSection from "@/components/pages/services/ServicesSection";
+import ServiceTabs from "@/components/pages/services/ServiceTabs";
 
 const ServicesPage = async () => {
   return (
     <>
-      <ServicesSection />
+      <ServiceTabs />
       <FaqSection />
       <ContactSection />
     </>
