@@ -323,40 +323,38 @@ const data = [
       "SpacesWare is an e-commerce platform allowing users to create accounts, log in, update profiles, and leave product reviews with Admin functionalities.",
     image: "https://abdulalimemon.vercel.app/spacesware.png",
     icons: [
-      [
-        {
-          title: "JavaScript",
-          image:
-            "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png",
-        },
-        {
-          title: "Tailwind CSS",
-          image:
-            "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/1024px-Tailwind_CSS_Logo.svg.png",
-        },
-        {
-          title: "React JS",
-          image:
-            "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png",
-        },
-        {
-          title: "Node JS",
-          image:
-            "https://static-00.iconduck.com/assets.00/node-js-icon-454x512-nztofx17.png",
-        },
-        {
-          title: "Express JS",
-          image:
-            "https://www.rapidbrains.com/assets/img/services/rapidbrains-expressjs.webp",
-        },
-        {
-          title: "MongoDB",
-          image:
-            "https://cdn.icon-icons.com/icons2/2415/PNG/512/mongodb_original_logo_icon_146424.png",
-        },
-      ],
+      {
+        title: "JavaScript",
+        image:
+          "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png",
+      },
+      {
+        title: "Tailwind CSS",
+        image:
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/1024px-Tailwind_CSS_Logo.svg.png",
+      },
+      {
+        title: "React JS",
+        image:
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png",
+      },
+      {
+        title: "Node JS",
+        image:
+          "https://static-00.iconduck.com/assets.00/node-js-icon-454x512-nztofx17.png",
+      },
+      {
+        title: "Express JS",
+        image:
+          "https://www.rapidbrains.com/assets/img/services/rapidbrains-expressjs.webp",
+      },
+      {
+        title: "MongoDB",
+        image:
+          "https://cdn.icon-icons.com/icons2/2415/PNG/512/mongodb_original_logo_icon_146424.png",
+      },
     ],
-    link: "/portfolio/spacesWare",
+    link: "/portfolio/spacesware",
     url: "https://emon-01.web.app/",
     urlName: "https://emon-01.web.app/",
     projectOverview:

@@ -14,6 +14,7 @@ type Technology = {
 };
 
 export type Project = {
+  _id:string;
   name: string;
   id: number;
   title: string;

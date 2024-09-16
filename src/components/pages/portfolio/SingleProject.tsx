@@ -29,7 +29,7 @@ const SingleProject = ({ project }: { project: Project }) => {
               </a>
             </div>
             <div className="flex items-start lg:items-center gap-4 mt-5 mb-20 lg:my-0 h-[70px] flex-wrap ">
-              {icons.map((item) => (
+              {icons?.map((item) => (
                 <div key={item.title} className="flex flex-col items-center justify-between h-full flex-wrap">
                   <Image
                     src={item.image}
@@ -67,7 +67,7 @@ const SingleProject = ({ project }: { project: Project }) => {
             </h2>
             <div className="text-sm lg:text-base w-full lg:w-2/3">
               <ul className="space-y-2 list-disc px-5">
-                {feature.map((item) => (
+                {feature?.map((item) => (
                   <li
                     key={item.title}
                   >
@@ -85,7 +85,7 @@ const SingleProject = ({ project }: { project: Project }) => {
             </h2>
             <div className="text-sm lg:text-base w-full lg:w-2/3">
             <ul className="space-y-2 list-disc px-5">
-                {technology.map((item) => (
+                {technology?.map((item) => (
                   <li
                     key={item.name}
                   >
