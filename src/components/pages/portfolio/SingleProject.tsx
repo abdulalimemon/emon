@@ -15,6 +15,8 @@ const SingleProject = ({ project }: { project: Project }) => {
     technology,
   } = project;
 
+  console.log(project);
+
   return (
     <section className="py-10 md:py-14 bg-slate-50 dark:bg-slate-950">
       <Container>
@@ -24,11 +26,11 @@ const SingleProject = ({ project }: { project: Project }) => {
               <h2 className="text-base lg:text-xl">
                 Name : <span className="font-semibold">{name}</span>
               </h2>
-              <a href={url} className="text-base text-blue-500 dark:text-link lg:text-xl">
+              <a href={url} target='_blanck' className="text-base text-blue-500 dark:text-link lg:text-xl">
                 {urlName}
               </a>
             </div>
-            <div className="flex items-start lg:items-center gap-4 mt-5 mb-20 lg:my-0 h-[60px] md:h-[70px] flex-wrap ">
+            <div className="flex items-start lg:items-center gap-4 mt-5 mb-20 lg:my-0 h-[60px] flex-wrap ">
               {icons?.map((item) => (
                 <div key={item.title} className="flex flex-col items-center justify-between h-full flex-wrap">
                   <Image
@@ -36,9 +38,9 @@ const SingleProject = ({ project }: { project: Project }) => {
                     alt={item.title}
                     width={40}
                     height={40}
-                    className="size-7 md:size-10"
+                    className="size-6 md:size-8"
                   />
-                  <h2 className="mt-1 text-sm font-semibold">{item.title}</h2>
+                  <h2 className="mt-1 text-sm font-medium md:font-semibold">{item.title}</h2>
                 </div>
               ))}
             </div>
