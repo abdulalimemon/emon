@@ -12,8 +12,6 @@ const ProjectPage = async ({ params }: ProjectName) => {
   const res = await fetch(`${process.env.BACKEND_URL}/project/${params.title}`);
   const project = await res.json();
 
-  console.log(project);
-
   const MoreProjectres = await fetch(`${process.env.BACKEND_URL}/project`, {
     cache: "no-store",
   });

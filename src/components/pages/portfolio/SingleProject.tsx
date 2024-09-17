@@ -28,7 +28,7 @@ const SingleProject = ({ project }: { project: Project }) => {
                 {urlName}
               </a>
             </div>
-            <div className="flex items-start lg:items-center gap-4 mt-5 mb-20 lg:my-0 h-[70px] flex-wrap ">
+            <div className="flex items-start lg:items-center gap-4 mt-5 mb-20 lg:my-0 h-[60px] md:h-[70px] flex-wrap ">
               {icons?.map((item) => (
                 <div key={item.title} className="flex flex-col items-center justify-between h-full flex-wrap">
                   <Image
@@ -36,6 +36,7 @@ const SingleProject = ({ project }: { project: Project }) => {
                     alt={item.title}
                     width={40}
                     height={40}
+                    className="size-7 md:size-10"
                   />
                   <h2 className="mt-1 text-sm font-semibold">{item.title}</h2>
                 </div>
