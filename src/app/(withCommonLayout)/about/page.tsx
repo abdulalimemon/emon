@@ -1,8 +1,8 @@
-import AboutSection from "@/components/pages/about/AboutSection";
-import AboutContactSection from "@/components/pages/about/ContactSection";
-import ProfileSection from "@/components/pages/about/ProfileSection";
-import Techstack from "@/components/pages/about/Techstack";
 import ContactForm from "@/components/pages/contact/ContactForm";
+import AboutSection from "./AboutSection";
+import AboutContactSection from "./ContactSection";
+import ProfileSection from "./ProfileSection";
+import Techstack from "./Techstack";
 
 const AboutPage = () => {
   return (

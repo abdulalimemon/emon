@@ -1,5 +1,5 @@
-import AllProjectsTable from "@/components/pages/Dashboard/projects/AllProjectsTable";
-import ProjectInfo from "@/components/pages/Dashboard/projects/ProjectInfo";
+import AllProjectsTable from "@/app/(withDashboard)/dashboard/project/AllProjectsTable";
+import ProjectInfo from "@/app/(withDashboard)/dashboard/project/ProjectInfo";
 
 const Page = () => {
   return (

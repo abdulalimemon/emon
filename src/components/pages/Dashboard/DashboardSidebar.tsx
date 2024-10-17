@@ -10,7 +10,7 @@ import { RiArticleFill } from "react-icons/ri";
 const DashboardSidebar = () => {
   const currentPath = usePathname();
   return (
-    <div className="hidden border-r bg-muted/40 md:block">
+    <div className="hidden border-r bg-[#0C1A3B] dark:bg-muted/40 md:block">
       <div className="flex h-full max-h-screen flex-col gap-2">
         <div className="flex-1">
           <nav className="grid items-start px-2 text-sm font-medium lg:px-4 pt-5">

@@ -2,7 +2,7 @@ const data = [
   {
     name: "Recover Ease",
     id: 1,
-    title: "recover-ease",
+    title: "recover ease",
     shortdetail:
       "Recover Ease is a helpful platform for organizing and delivering aid like food and supplies to people who need it quickly during emergencies.",
     image: "https://abdulalimemon.vercel.app/recover-ease.png",
@@ -37,7 +37,7 @@ const data = [
           "https://cdn.icon-icons.com/icons2/2415/PNG/512/mongodb_original_logo_icon_146424.png",
       },
     ],
-    link: "/portfolio/recover-ease",
+    link: "/portfolio/recover ease",
     url: "https://recover-ease.netlify.app/",
     urlName: "https://recover-ease.netlify.app/",
     projectOverview:
@@ -170,7 +170,7 @@ const data = [
   {
     name: "Shine Store",
     id: 2,
-    title: "shine-store",
+    title: "shine store",
     shortdetail:
       "Shine Store is an online shop offering a wide range of cleaning supplies. Get everything you need to keep your space clean and shiny!",
     image: "https://abdulalimemon.vercel.app/shine-store.png",
@@ -205,7 +205,7 @@ const data = [
           "https://cdn.icon-icons.com/icons2/2415/PNG/512/mongodb_original_logo_icon_146424.png",
       },
     ],
-    link: "/portfolio/shine-store",
+    link: "/portfolio/shine store",
     url: "https://shine-store.vercel.app/",
     urlName: "https://shine-store.vercel.app/",
     projectOverview:

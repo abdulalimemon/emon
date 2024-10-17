@@ -1,4 +1,4 @@
-import AddProjectForm from "@/components/pages/Dashboard/projects/AddProjectForm";
+import AddProjectForm from "@/app/(withDashboard)/dashboard/project/add/AddProjectForm";
 
 const Page = () => {
   return (

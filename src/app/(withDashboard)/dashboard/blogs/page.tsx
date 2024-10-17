@@ -1,5 +1,5 @@
-import AllBlogTable from "@/components/pages/Dashboard/blogs/AllBlogTable";
-import BlogsInfo from "@/components/pages/Dashboard/blogs/BlogsInfo";
+import AllBlogTable from "@/app/(withDashboard)/dashboard/blogs/AllBlogTable";
+import BlogsInfo from "@/app/(withDashboard)/dashboard/blogs/BlogsInfo";
 
 const SkillsPage = () => {
   return (

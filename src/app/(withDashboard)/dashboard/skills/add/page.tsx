@@ -1,4 +1,4 @@
-import AddSkillForm from "@/components/pages/Dashboard/skills/AddSkillForm";
+import AddSkillForm from "@/app/(withDashboard)/dashboard/skills/add/AddSkillForm";
 
 const Page = () => {
   return (

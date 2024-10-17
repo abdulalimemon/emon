@@ -74,48 +74,43 @@ const AllBlogTable = () => {
               </Button>
             </Link>
           </div>
-        </div>
-      </div>
-
-      <div className="flex py-10 items-center justify-center rounded-lg border border-dashed shadow-sm">
-        <div className="flex flex-col gap-1 w-full px-5">
-          <Table>
-            <TableHeader>
-              <TableRow>
-                <TableHead className="w-1/4">Serial</TableHead>
-                <TableHead className="w-1/4">Image</TableHead>
-                <TableHead className="w-1/4">Title</TableHead>
-                <TableHead className="w-1/4 hidden md:block">Action</TableHead>
-              </TableRow>
-            </TableHeader>
-            <TableBody>
-              {projects.map((item, index) => (
-                <TableRow key={index}>
-                  <TableCell>{index + 1}</TableCell>
-                  <TableCell className="font-medium">
-                    <Image
-                      src={item.image}
-                      alt={item.title}
-                      width={40}
-                      height={40}
-                      className="size-10"
-                    />
-                  </TableCell>
-                  <TableCell>{item.title}</TableCell>
-                  <TableCell className="hidden md:block">
-                    <div className="flex gap-5">
-                      <Button className="dark:text-black">
-                        <FaRegEdit className="size-5" />
-                      </Button>
-                      <Button className=" bg-red-500 hover:bg-red-800">
-                        <RiDeleteBin4Line className="size-5" />
-                      </Button>
-                    </div>
-                  </TableCell>
+          <div>
+            <Table>
+              <TableHeader>
+                <TableRow>
+                  <TableHead className="w-1/4">Serial</TableHead>
+                  <TableHead className="w-1/4">Image</TableHead>
+                  <TableHead className="w-1/4">Title</TableHead>
+                  <TableHead className="w-1/4 hidden md:block">
+                    Action
+                  </TableHead>
                 </TableRow>
-              ))}
-            </TableBody>
-          </Table>
+              </TableHeader>
+              <TableBody>
+                {projects.map((item, index) => (
+                  <TableRow key={index}>
+                    <TableCell>{index + 1}</TableCell>
+                    <TableCell className="font-medium">
+                      <Image
+                        src={item.image}
+                        alt={item.title}
+                        width={40}
+                        height={40}
+                        className="size-10"
+                      />
+                    </TableCell>
+                    <TableCell>{item.title}</TableCell>
+                    <TableCell className="hidden md:block">
+                      <div className="flex gap-5">
+                        <FaRegEdit className="size-6 cursor-pointer text-green-500 hover:text-green-700" />
+                        <RiDeleteBin4Line className="size-6 text-red-500 hover:text-red-700 cursor-pointer" />
+                      </div>
+                    </TableCell>
+                  </TableRow>
+                ))}
+              </TableBody>
+            </Table>
+          </div>
         </div>
       </div>
     </>

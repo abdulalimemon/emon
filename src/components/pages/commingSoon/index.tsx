@@ -13,10 +13,6 @@ const CommingSoon = () => {
         <div className="flex justify-between items-center flex-col">
           <CountdownTimer />
         </div>
-        <p className="text-sm md:text-base font-medium py-10">
-          Stay tuned for an unforgettable experience. Join us as we embark on
-          this exciting journey together!
-        </p>
       </Container>
     </section>
   );

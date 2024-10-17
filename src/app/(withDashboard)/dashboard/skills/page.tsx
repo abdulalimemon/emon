@@ -1,5 +1,5 @@
-import SkillsInfo from "@/components/pages/Dashboard/skills/SkillsInfo";
-import SkillsTable from "@/components/pages/Dashboard/skills/SkillsTable";
+import SkillsInfo from "@/app/(withDashboard)/dashboard/skills/SkillsInfo";
+import SkillsTable from "@/app/(withDashboard)/dashboard/skills/SkillsTable";
 
 const SkillsPage = () => {
   return (

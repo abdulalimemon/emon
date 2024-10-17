@@ -1,7 +1,9 @@
 import dynamic from "next/dynamic";
 
-
-const Editor = dynamic(() => import("@/components/pages/Dashboard/blogs/BlogsEditor"), { ssr: false });
+const Editor = dynamic(
+  () => import("@/app/(withDashboard)/dashboard/blogs/BlogsEditor"),
+  { ssr: false }
+);
 
 const Page = () => {
   return (

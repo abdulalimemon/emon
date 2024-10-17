@@ -52,6 +52,7 @@ const MobileNavbar = () => {
                           : "NavMobile"
                       }
                       href="/"
+                      onClick={() => setIsMenuOpen(!isMenuOpen)}
                     >
                       <IoHome className="size-6" aria-hidden="true" />
                       <span className="mx-2 text-sm font-medium">Home</span>
@@ -63,6 +64,7 @@ const MobileNavbar = () => {
                           : "NavMobile "
                       }
                       href="/about"
+                      onClick={() => setIsMenuOpen(!isMenuOpen)}
                     >
                       <FaDev className="size-6" aria-hidden="true" />
                       <span className="mx-2 text-sm font-medium">About</span>
@@ -74,6 +76,7 @@ const MobileNavbar = () => {
                           : "NavMobile "
                       }
                       href="/portfolio"
+                      onClick={() => setIsMenuOpen(!isMenuOpen)}
                     >
                       <AiOutlineProject className="size-6" aria-hidden="true" />
                       <span className="mx-2 text-sm font-medium">
@@ -87,6 +90,7 @@ const MobileNavbar = () => {
                           : "NavMobile "
                       }
                       href="/services"
+                      onClick={() => setIsMenuOpen(!isMenuOpen)}
                     >
                       <MdMiscellaneousServices
                         className="size-6"
@@ -101,12 +105,14 @@ const MobileNavbar = () => {
                           : "NavMobile "
                       }
                       href="/blogs"
+                      onClick={() => setIsMenuOpen(!isMenuOpen)}
                     >
                       <RiArticleFill className="size-6" aria-hidden="true" />
                       <span className="mx-2 text-sm font-medium">Blogs</span>
                     </Link>
                     <Link
                       href="/contact"
+                      onClick={() => setIsMenuOpen(!isMenuOpen)}
                       className="decoration-none font-semibold w-full"
                     >
                       <button className="relative inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-1 focus:ring-slate-400 focus:ring-offset-1 focus:ring-offset-slate-50 w-full mt-4">

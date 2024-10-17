@@ -1,6 +1,6 @@
 import ContactSection from "@/components/pages/home/ContactSection";
-import FaqSection from "@/components/pages/services/FaqSection";
-import ServiceTabs from "@/components/pages/services/ServiceTabs";
+import FaqSection from "@/app/(withCommonLayout)/services/FaqSection";
+import ServiceTabs from "@/app/(withCommonLayout)/services/ServiceTabs";
 
 const ServicesPage = async () => {
   return (

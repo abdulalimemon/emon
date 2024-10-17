@@ -1,7 +1,7 @@
-import MoreProject from "@/components/pages/portfolio/MoreProject";
-import SingleProject from "@/components/pages/portfolio/SingleProject";
+import MoreProject from "@/app/(withCommonLayout)/portfolio/[title]/MoreProject";
 import { Project } from "@/type";
 import Link from "next/link";
+import SingleProject from "./SingleProject";
 
 interface ProjectName {
   params: {
@@ -38,7 +38,6 @@ const ProjectPage = async ({ params }: ProjectName) => {
       </>
     );
   } catch (error) {
-    console.error(error);
     return (
       <div className="h-[95vh] flex flex-col items-center justify-center">
         <p className="text-red-500 font-semibold">
