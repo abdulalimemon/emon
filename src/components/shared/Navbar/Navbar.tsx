@@ -10,6 +10,7 @@ import { usePathname } from "next/navigation";
 const Navbar = () => {
   const { setTheme } = useTheme();
   const currentPath = usePathname();
+  const routes = ["about", "portfolio", "services", "blogs"];
 
   return (
     <header className="relative w-full border-b border-[#1e242d] h-14 flex justify-center items-center nav-bg">
@@ -26,54 +27,20 @@ const Navbar = () => {
 
           <div className="hidden lg:flex items-center">
             <ul className="inline-flex justify-center items-center space-x-8">
-              <li>
-                <Link
-                  href="/about"
-                  className={
-                    currentPath === "/about"
-                      ? "decoration-none font-semibold text-link"
-                      : "decoration-none font-semibold hover:text-color-yellow"
-                  }
-                >
-                  About
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/portfolio"
-                  className={
-                    currentPath === "/portfolio"
-                      ? "decoration-none font-semibold text-link"
-                      : "decoration-none font-semibold hover:text-color-yellow"
-                  }
-                >
-                  Portfolio
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/services"
-                  className={
-                    currentPath === "/services"
-                      ? "decoration-none font-semibold text-link"
-                      : "decoration-none font-semibold hover:text-color-yellow"
-                  }
-                >
-                  Services
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/blogs"
-                  className={
-                    currentPath === "/blogs"
-                      ? "decoration-none font-semibold text-link"
-                      : "decoration-none font-semibold hover:text-color-yellow"
-                  }
-                >
-                  Blogs
-                </Link>
-              </li>
+              {routes.map((link) => (
+                <li key={link}>
+                  <Link
+                    href={`/${link}`}
+                    className={
+                      currentPath === "/about"
+                        ? "decoration-none font-semibold text-link"
+                        : "decoration-none font-semibold hover:text-color-yellow"
+                    }
+                  >
+                    {link.charAt(0).toUpperCase() + link.slice(1)}
+                  </Link>
+                </li>
+              ))}
 
               <li className="size-5">
                 <Sun

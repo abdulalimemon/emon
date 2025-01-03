@@ -11,6 +11,34 @@ import { FaDev } from "react-icons/fa";
 import { AiOutlineProject } from "react-icons/ai";
 import { RiArticleFill } from "react-icons/ri";
 
+const routes = [
+  {
+    path: "/",
+    label: "Home",
+    icon: <IoHome className="size-6" aria-hidden="true" />,
+  },
+  {
+    path: "/about",
+    label: "About",
+    icon: <FaDev className="size-6" aria-hidden="true" />,
+  },
+  {
+    path: "/portfolio",
+    label: "Portfolio",
+    icon: <AiOutlineProject className="size-6" aria-hidden="true" />,
+  },
+  {
+    path: "/services",
+    label: "Services",
+    icon: <MdMiscellaneousServices className="size-6" aria-hidden="true" />,
+  },
+  {
+    path: "/blogs",
+    label: "Blogs",
+    icon: <RiArticleFill className="size-6" aria-hidden="true" />,
+  },
+];
+
 const MobileNavbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const currentPath = usePathname();
@@ -45,71 +73,24 @@ const MobileNavbar = () => {
               <div className="mt-6 flex flex-1 flex-col justify-between ">
                 <nav className="-mx-3 space-y-6 ">
                   <div className="space-y-5">
-                    <Link
-                      className={
-                        currentPath === "/"
-                          ? "NavMobile bg-color-yellow text-black"
-                          : "NavMobile"
-                      }
-                      href="/"
-                      onClick={() => setIsMenuOpen(!isMenuOpen)}
-                    >
-                      <IoHome className="size-6" aria-hidden="true" />
-                      <span className="mx-2 text-sm font-medium">Home</span>
-                    </Link>
-                    <Link
-                      className={
-                        currentPath === "/about"
-                          ? "NavMobile bg-color-yellow text-black"
-                          : "NavMobile "
-                      }
-                      href="/about"
-                      onClick={() => setIsMenuOpen(!isMenuOpen)}
-                    >
-                      <FaDev className="size-6" aria-hidden="true" />
-                      <span className="mx-2 text-sm font-medium">About</span>
-                    </Link>
-                    <Link
-                      className={
-                        currentPath === "/portfolio"
-                          ? "NavMobile bg-color-yellow text-black"
-                          : "NavMobile "
-                      }
-                      href="/portfolio"
-                      onClick={() => setIsMenuOpen(!isMenuOpen)}
-                    >
-                      <AiOutlineProject className="size-6" aria-hidden="true" />
-                      <span className="mx-2 text-sm font-medium">
-                        Portfolio
-                      </span>
-                    </Link>
-                    <Link
-                      className={
-                        currentPath === "/services"
-                          ? "NavMobile bg-color-yellow text-black"
-                          : "NavMobile "
-                      }
-                      href="/services"
-                      onClick={() => setIsMenuOpen(!isMenuOpen)}
-                    >
-                      <MdMiscellaneousServices
-                        className="size-6"
-                        aria-hidden="true"
-                      />
-                      <span className="mx-2 text-sm font-medium">Services</span>
-                    </Link>
-                    <Link
-                      className={
-                        currentPath === "/blogs"
-                          ? "NavMobile bg-color-yellow text-black"
-                          : "NavMobile "
-                      }
-                      href="/blogs"
-                      onClick={() => setIsMenuOpen(!isMenuOpen)}
-                    >
-                      <RiArticleFill className="size-6" aria-hidden="true" />
-                      <span className="mx-2 text-sm font-medium">Blogs</span>
-                    </Link>
+                    {routes.map((route) => (
+                      <Link
+                        key={route.path}
+                        className={
+                          currentPath === route.path
+                            ? "NavMobile bg-color-yellow text-black"
+                            : "NavMobile"
+                        }
+                        href={route.path}
+                        onClick={() => setIsMenuOpen(!isMenuOpen)}
+                      >
+                        {route.icon}
+                        <span className="mx-2 text-sm font-medium">
+                          {route.label}
+                        </span>
+                      </Link>
+                    ))}
+                    
                     <Link
                       href="/contact"
                       onClick={() => setIsMenuOpen(!isMenuOpen)}
