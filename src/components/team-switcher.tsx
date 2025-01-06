@@ -1,7 +1,7 @@
-"use client"
+"use client";
 
-import * as React from "react"
-import { ChevronsUpDown, Plus } from "lucide-react"
+import * as React from "react";
+import { ChevronsUpDown, Plus } from "lucide-react";
 
 import {
   DropdownMenu,
@@ -11,31 +11,33 @@ import {
   DropdownMenuSeparator,
   DropdownMenuShortcut,
   DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu"
+} from "@/components/ui/dropdown-menu";
+import { SidebarTrigger } from "@/components/ui/sidebar";
 import {
   SidebarMenu,
   SidebarMenuButton,
   SidebarMenuItem,
   useSidebar,
-} from "@/components/ui/sidebar"
+} from "@/components/ui/sidebar";
 
 export function TeamSwitcher({
   teams,
 }: {
   teams: {
-    name: string
-    logo: React.ElementType
-    plan: string
-  }[]
+    name: string;
+    logo: React.ElementType;
+    plan: string;
+  }[];
 }) {
-  const { isMobile } = useSidebar()
-  const [activeTeam, setActiveTeam] = React.useState(teams[0])
+  const { isMobile } = useSidebar();
+  const [activeTeam, setActiveTeam] = React.useState(teams[0]);
 
   return (
     <SidebarMenu>
       <SidebarMenuItem>
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
+            {/* <SidebarTrigger className="-ml-1" /> */}
             <SidebarMenuButton
               size="lg"
               className="data-[state=open]:bg-sidebar-accent data-[state=open]:text-sidebar-accent-foreground"
@@ -61,21 +63,20 @@ export function TeamSwitcher({
             <DropdownMenuLabel className="text-xs text-muted-foreground">
               Teams
             </DropdownMenuLabel>
-            {teams.map((team, index) => (
+            {teams.map((team) => (
               <DropdownMenuItem
                 key={team.name}
                 onClick={() => setActiveTeam(team)}
-                className="gap-2 p-2"
+                className="gap-2 p-2 hover:text-white cursor-pointer"
               >
-                <div className="flex size-6 items-center justify-center rounded-sm border">
+                <div className="flex size-6 items-center justify-center rounded-sm border ">
                   <team.logo className="size-4 shrink-0" />
                 </div>
                 {team.name}
-                <DropdownMenuShortcut>⌘{index + 1}</DropdownMenuShortcut>
               </DropdownMenuItem>
             ))}
             <DropdownMenuSeparator />
-            <DropdownMenuItem className="gap-2 p-2">
+            <DropdownMenuItem className="gap-2 p-2 cursor-pointer">
               <div className="flex size-6 items-center justify-center rounded-md border bg-background">
                 <Plus className="size-4" />
               </div>
@@ -85,5 +86,5 @@ export function TeamSwitcher({
         </DropdownMenu>
       </SidebarMenuItem>
     </SidebarMenu>
-  )
+  );
 }
