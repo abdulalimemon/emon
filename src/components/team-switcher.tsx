@@ -1,50 +1,44 @@
 "use client";
 
 import * as React from "react";
-import { ChevronsUpDown, Plus } from "lucide-react";
-
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
-  DropdownMenuShortcut,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
 import { SidebarTrigger } from "@/components/ui/sidebar";
 import {
   SidebarMenu,
-  SidebarMenuButton,
   SidebarMenuItem,
-  useSidebar,
+  SidebarMenuButton,
 } from "@/components/ui/sidebar";
+import emonImg from "@/assets/emon.png";
+import Image from "next/image";
+import {
+  DropdownMenu,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 
-export function TeamSwitcher({
-  teams,
-}: {
-  teams: {
-    name: string;
-    logo: React.ElementType;
-    plan: string;
-  }[];
-}) {
-  const { isMobile } = useSidebar();
-  const [activeTeam, setActiveTeam] = React.useState(teams[0]);
-
+export function TeamSwitcher() {
   return (
-    <SidebarMenu className="flex gap-2">
-      <div className="grid flex-1 text-left text-sm leading-tight">
-                <span className="truncate font-semibold">
-                  {activeTeam.name}
-                </span>
-                <span className="truncate text-xs">{activeTeam.plan}</span>
-              </div>
-      <SidebarMenuItem className="flex data-[state=open]:flex gap-1 justify-center items-center">
-      
+    <SidebarMenu>
+      <SidebarMenuItem className="flex gap-2 justify-center items-center">
         <DropdownMenu>
-        <SidebarTrigger className="-ml-1" />
+          <SidebarMenuButton
+            size="lg"
+            className="data-[state=open]:bg-sidebar-accent data-[state=open]:text-sidebar-accent-foreground"
+          >
+            <div className="flex aspect-square size-8 items-center justify-center rounded-lg text-sidebar-primary-foreground">
+              <Image
+                src={emonImg}
+                width={20}
+                height={20}
+                alt="Icon"
+                className="size-7 rounded-full"
+              />
+            </div>
+            <div className="grid flex-1 text-left text-sm leading-tight">
+              <span className="truncate font-semibold">Abdul Alim Emon</span>
+              <span className="truncate text-xs">Front End Developer</span>
+            </div>
+          </SidebarMenuButton>
         </DropdownMenu>
+        <SidebarTrigger className="-ml-1" />
       </SidebarMenuItem>
     </SidebarMenu>
   );

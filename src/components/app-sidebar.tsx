@@ -26,13 +26,13 @@ const data = {
   user: {
     name: "Abdul Alim Emon",
     email: "abdulalimemon02@gmail.com",
-    avatar: "/avatars/shadcn.jpg",
+    avatar: "/emon.png",
   },
   teams: [
     {
-      name: "Acme Inc",
+      name: "Abdul Alim Emon",
       logo: GalleryVerticalEnd,
-      plan: "Enterprise",
+      plan: "Front End Developer",
     },
     {
       name: "Acme Corp.",
@@ -138,7 +138,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   return (
     <Sidebar collapsible="icon" {...props}>
       <SidebarHeader>
-        <TeamSwitcher teams={data.teams} />
+        <TeamSwitcher />
       </SidebarHeader>
       <SidebarContent>
         <NavMain items={data.navMain} />
