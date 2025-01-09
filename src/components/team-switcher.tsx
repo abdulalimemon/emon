@@ -11,7 +11,6 @@ import emonImg from "@/assets/emon.png";
 import Image from "next/image";
 import {
   DropdownMenu,
-  DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 
 export function TeamSwitcher() {

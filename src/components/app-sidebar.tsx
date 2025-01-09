@@ -1,25 +1,24 @@
-"use client"
+"use client";
 
-import * as React from "react"
+import * as React from "react";
 import {
-  AudioWaveform,
   BookOpen,
   Bot,
-  Command,
   GalleryVerticalEnd,
   Settings2,
-  SquareTerminal,
-} from "lucide-react"
-import { NavMain } from "@/components/nav-main"
-import { NavUser } from "@/components/nav-user"
-import { TeamSwitcher } from "@/components/team-switcher"
+  FileType2
+} from "lucide-react";
+import { NavMain } from "@/components/nav-main";
+import { NavUser } from "@/components/nav-user";
+import { TeamSwitcher } from "@/components/team-switcher";
 import {
   Sidebar,
   SidebarContent,
   SidebarFooter,
   SidebarHeader,
-  SidebarRail,
-} from "@/components/ui/sidebar"
+  SidebarRail
+} from "@/components/ui/sidebar";
+
 
 // This is sample data.
 const data = {
@@ -34,31 +33,21 @@ const data = {
       logo: GalleryVerticalEnd,
       plan: "Front End Developer",
     },
-    {
-      name: "Acme Corp.",
-      logo: AudioWaveform,
-      plan: "Startup",
-    },
-    {
-      name: "Evil Corp.",
-      logo: Command,
-      plan: "Free",
-    },
   ],
   navMain: [
     {
-      title: "Pages",
-      url: "#",
-      icon: SquareTerminal,
+      title: "Blogs",
+      url: "/dashboard/blogs",
+      icon: FileType2,
       isActive: true,
       items: [
         {
-          title: "History",
-          url: "#",
+          title: "All Blogs",
+          url: "/dashboard/blogs",
         },
         {
-          title: "Starred",
-          url: "#",
+          title: "Create Blogs",
+          url: "/dashboard/blogs/add",
         },
         {
           title: "Settings",
@@ -132,7 +121,7 @@ const data = {
       ],
     },
   ],
-}
+};
 
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   return (
@@ -148,5 +137,5 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
       </SidebarFooter>
       <SidebarRail />
     </Sidebar>
-  )
+  );
 }
