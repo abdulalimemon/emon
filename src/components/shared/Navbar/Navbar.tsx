@@ -27,20 +27,23 @@ const Navbar = () => {
 
           <div className="hidden lg:flex items-center">
             <ul className="inline-flex justify-center items-center space-x-8">
-              {routes.map((link) => (
-                <li key={link}>
-                  <Link
-                    href={`/${link}`}
-                    className={
-                      currentPath === "/about"
-                        ? "decoration-none font-semibold text-link"
-                        : "decoration-none font-semibold hover:text-color-yellow"
-                    }
-                  >
-                    {link.charAt(0).toUpperCase() + link.slice(1)}
-                  </Link>
-                </li>
-              ))}
+              {routes.map((link) => {
+                const fullPath = `/${link}`;
+                return (
+                  <li key={link}>
+                    <Link
+                      href={fullPath}
+                      className={
+                        currentPath === fullPath
+                          ? "decoration-none font-semibold text-link"
+                          : "decoration-none font-semibold hover:text-color-yellow"
+                      }
+                    >
+                      {link.charAt(0).toUpperCase() + link.slice(1)}
+                    </Link>
+                  </li>
+                );
+              })}
 
               <li className="size-5">
                 <Sun
