@@ -37,7 +37,6 @@ export function TeamSwitcher() {
             </div>
           </SidebarMenuButton>
         </DropdownMenu>
-        <SidebarTrigger className="-ml-1" />
       </SidebarMenuItem>
     </SidebarMenu>
   );

@@ -1,32 +1,31 @@
 "use client";
-
-import Container from "@/components/layout/Container";
 import { Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import DashboardMobileNav from "./DashboardMobileNav";
+import { SidebarTrigger } from "@/components/ui/sidebar";
 
 const DashboardNavbar = () => {
   const { setTheme } = useTheme();
   const currentPath = usePathname();
 
   return (
-    <header className="relative w-full border-b border-[#1e242d] h-14 flex justify-center items-center nav-bg">
-      <Container>
-        <div className="flex items-center justify-between py-2">
-          <div className="inline-flex items-center">
-            <Link
-              href={"/"}
-              className="decoration-none font-semibold hover:text-color-yellow"
-            >
-              Emon
-            </Link>
-          </div>
-
-          <div className="hidden lg:flex items-center">
-            <ul className="inline-flex justify-center items-center space-x-8">
-              <li className="space-x-5">
+    <>
+      <section className="bg-[#010313] border-b text-slate-100">
+        <div className="px-5">
+          <nav className="flex items-center justify-between py-2">
+            <div className="flex gap-3 justify-center items-center">
+              <SidebarTrigger className="-ml-1" />
+              <Link
+                href={"/"}
+                className="decoration-none font-semibold hover:text-color-yellow"
+              >
+                Emon
+              </Link>
+            </div>
+            <ul className="font-semibold flex items-center justify-end gap-5 lg:flex">
+              <li className="space-x-5 hidden md:block">
                 <Link
                   href="/"
                   className={
@@ -71,24 +70,10 @@ const DashboardNavbar = () => {
                 </div>
               </li>
             </ul>
-          </div>
-
-          <div className="lg:hidden flex justify-center items-center">
-            <div className="size-5 mr-4">
-              <Sun
-                className="absolute h-[1.25rem] w-[1.25rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0 cursor-pointer"
-                onClick={() => setTheme("dark")}
-              />
-              <Moon
-                className="absolute h-[1.25rem] w-[1.25rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100 cursor-pointer"
-                onClick={() => setTheme("light")}
-              />
-            </div>
-            <DashboardMobileNav />
-          </div>
+          </nav>
         </div>
-      </Container>
-    </header>
+      </section>
+    </>
   );
 };
 
